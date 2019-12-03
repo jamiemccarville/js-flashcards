@@ -1,15 +1,19 @@
 <template>
   <div>
-    <app-card></app-card>
+    <flipping-card></flipping-card>
+    <hover-card></hover-card>
   </div>
 </template>
 
 <script>
-import AppCard from '../components/AppCard';
+//import AppCard from "../components/AppCard";
+import FlippingCard from "../components/FlippingCard";
+import HoverCard from "../components/HoverCard";
 
 export default {
   components: {
-    AppCard
+    FlippingCard,
+    HoverCard
   }
 };
 </script>
