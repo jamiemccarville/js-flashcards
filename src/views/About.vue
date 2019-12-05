@@ -1,19 +1,23 @@
 <template>
   <div>
-    <flipping-card></flipping-card>
+    <app-card></app-card>
     <hover-card></hover-card>
   </div>
 </template>
 
 <script>
-//import AppCard from "../components/AppCard";
-import FlippingCard from "../components/FlippingCard";
-import HoverCard from "../components/HoverCard";
+import AppCard from "../components/AppCard";
+// import FlippingCard from "../components/FlippingCard";
+//import HoverCard from "../components/HoverCard";
 
 export default {
   components: {
-    FlippingCard,
-    HoverCard
+    AppCard
   }
 };
 </script>
+<style>
+body {
+  background-color: darkblue;
+}
+</style>

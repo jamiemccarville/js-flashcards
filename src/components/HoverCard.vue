@@ -1,13 +1,18 @@
 <template>
-  <div class="flip-card" @click="flipMe = !flipMe">
+  <div class="flip-card zoom" @click="flipMe = !flipMe">
     <div class="flip-card-inner">
       <div class="flip-card-front" :class="{ flipped: flipMe }">
-        <img src="../assets/hacktoberfest2.png" alt="Avatar" style="width:300px;height:300px;" />
+        <div class="bg-blue-500">
+          <h1>JS Basics</h1>
+          <p>Types in JS</p>
+        </div>
       </div>
       <div class="flip-card-back" :class="{ tofront: flipMe }">
-        <h1>John Doe</h1>
-        <p>Architect & Engineer</p>
-        <p>We love that guy</p>
+        <div class="popout mt-20">
+          <h1>John Doe</h1>
+          <p>Architect & Engineer</p>
+          <p>We love that guy</p>
+        </div>
       </div>
     </div>
   </div>
@@ -26,11 +31,10 @@ export default {
 <style scoped>
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  background-color: transparent;
+  background: transparent;
   width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  height: 500px;
+  perspective: 1500px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -39,7 +43,7 @@ export default {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 1s;
   transform-style: preserve-3d;
 }
 
@@ -55,20 +59,18 @@ export default {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
   color: black;
+  background-color: purple;
 }
 
 /* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -78,5 +80,17 @@ export default {
 
 .tofront {
   transform: rotateY(360deg);
+}
+
+.zoom {
+  transition: transform 0.4s;
+}
+
+.zoom:hover {
+  transform: scale(1.03);
+}
+
+.popout {
+  transform: translateZ(80px);
 }
 </style>
