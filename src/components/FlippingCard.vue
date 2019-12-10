@@ -4,57 +4,51 @@
       <!--  -->
 
       <!-- Column -->
-      <div
-        class="my-1 px-2 py-2 lg:py-0 w-full md:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4"
-      >
-        <div class="flip-card" @click="flipMe = !flipMe">
-          <div class="flip-card-inner h-full w-full relative">
+      <div class="my-1 px-2 py-2 lg:py-0 w-full md:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
+        <!-- Scene -->
+        <div class="scene scene--card zoom">
+          <!-- Card -->
+          <div class="card" @click="flipped = !flipped" :class="{ flipme: flipped }">
             <!-- FRONT side  -->
-            <article
-              class="flip-card-front overflow-hidden rounded-lg shadow-lg hover:shadow-xl zoom"
-              :class="{ flipped: flipMe }"
-            >
-              <div class="relative bg-turquoise-500 pb-2/3">
-                <img
-                  alt=" Placeholder"
-                  class="absolute h-full w-full object-cover"
-                  src="../assets/hacktoberfest2.png"
-                />
+            <div class="card__face card__face--front">
+              <div class="popout">
+                <h1>FRONT</h1>
               </div>
-
-              <div class="px-6 py-4">
-                <div class="font-sans font-bold text-xl mb-2">Stock Trader</div>
-
-                <p class="text-gray-700 text-base font-opensans">
-                  Final project for Vue course building an app using Vue,
-                  vue-router, vuex and Firebase
-                </p>
-              </div>
-            </article>
+            </div>
             <!-- END FRONT side -->
 
             <!--  BACK side  -->
-            <article
-              class="flip-card-back overflow-hidden rounded-lg shadow-lg hover:shadow-xl zoom"
-              :class="{ tofront: flipMe }"
-            >
-              <div class="relative bg-turquoise-500 pb-2/3">
-                <img
-                  alt=" Placeholder"
-                  class="absolute h-full w-full object-cover"
-                  src="../assets/hacktoberfest2.png"
-                />
+            <div class="card__face card__face--back">
+              <div class="popout">
+                <h1>BACK</h1>
               </div>
+            </div>
+            <!-- END BACK side -->
+          </div>
+        </div>
+      </div>
+      <!-- END Column -->
 
-              <div class="px-6 py-4">
-                <div class="font-sans font-bold text-xl mb-2">Stock Trader</div>
-
-                <p class="text-gray-700 text-base font-opensans">
-                  Final project for Vue course building an app using Vue,
-                  vue-router, vuex and Firebase
-                </p>
+      <!-- Column -->
+      <div class="my-1 px-2 py-2 lg:py-0 w-full md:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
+        <!-- Scene -->
+        <div class="scene scene--card zoom">
+          <!-- Card -->
+          <div class="card" @click="flipped = !flipped" :class="{ flipme: flipped }">
+            <!-- FRONT side  -->
+            <div class="card__face card__face--front">
+              <div class="popout">
+                <h1>FRONT</h1>
               </div>
-            </article>
+            </div>
+            <!-- END FRONT side -->
+
+            <!--  BACK side  -->
+            <div class="card__face card__face--back">
+              <div class="popout">
+                <h1>BACK</h1>
+              </div>
+            </div>
             <!-- END BACK side -->
           </div>
         </div>
@@ -68,58 +62,65 @@
 export default {
   data() {
     return {
-      flipMe: false
+      flipped: false
     };
   }
 };
 </script>
 
 <style scoped>
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+.scene {
+  width: 200px;
+  height: 260px;
+  margin: 40px 0;
+  perspective: 1500px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  transition: transform 0.8s;
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
   transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container 
-.flip-card:hover .flip-card-inner {
+.flipme {
   transform: rotateY(180deg);
-}*/
+}
 
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
+.card__face {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  transition: transform 0.8s;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
   transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
+.card__face--front {
+  background: red;
 }
 
-/* Style the back side */
-.flip-card-back {
+.card__face--back {
+  background: blue;
   transform: rotateY(180deg);
 }
 
-.flipped {
-  transform: rotateY(180deg);
+.popout {
+  transform: translateZ(80px);
 }
 
-.tofront {
-  transform: rotateY(360deg);
+.zoom {
+  transition: transform 0.4s;
+}
+
+.zoom:hover {
+  transform: scale(1.03);
 }
 </style>

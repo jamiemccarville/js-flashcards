@@ -1,22 +1,21 @@
 <template>
-  <div>
-    <app-card></app-card>
+  <div class="bg-blue-500 h-screen">
     <hover-card></hover-card>
   </div>
 </template>
 
 <script>
-import AppCard from "../components/AppCard";
+//import AppCard from "../components/AppCard";
 // import FlippingCard from "../components/FlippingCard";
-//import HoverCard from "../components/HoverCard";
+import HoverCard from "../components/HoverCard";
 
 export default {
   components: {
-    AppCard
+    HoverCard
   }
 };
 </script>
-<style>
+<style scoped>
 body {
   background-color: darkblue;
 }

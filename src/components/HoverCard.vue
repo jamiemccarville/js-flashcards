@@ -1,17 +1,43 @@
 <template>
-  <div class="flip-card zoom" @click="flipMe = !flipMe">
-    <div class="flip-card-inner">
-      <div class="flip-card-front" :class="{ flipped: flipMe }">
-        <div class="bg-blue-500">
-          <h1>JS Basics</h1>
-          <p>Types in JS</p>
+  <div>
+    <div class="scene scene--card zoom">
+      <div
+        class="card"
+        @click="
+          firstCard == undefined ? (firstCard = 1) : (firstCard = undefined)
+        "
+        :class="{ flipme: firstCard == 1 }"
+      >
+        <div class="card__face card__face--front shadow-lg">
+          <div class="popout mt-6">
+            <h1>FRONT</h1>
+          </div>
+        </div>
+        <div class="card__face card__face--back shadow-xl">
+          <div class="popout mt-6">
+            <h1>BACK</h1>
+          </div>
         </div>
       </div>
-      <div class="flip-card-back" :class="{ tofront: flipMe }">
-        <div class="popout mt-20">
-          <h1>John Doe</h1>
-          <p>Architect & Engineer</p>
-          <p>We love that guy</p>
+    </div>
+    <div class="scene scene--card">
+      <div
+        id="1"
+        class="card"
+        @click="
+          secondCard == undefined ? (secondCard = 1) : (secondCard = undefined)
+        "
+        :class="{ flipme: secondCard == 1 }"
+      >
+        <div class="card__face card__face--front">
+          <div class="popout mt-6">
+            <h1>FRONT</h1>
+          </div>
+        </div>
+        <div class="card__face card__face--back">
+          <div class="popout mt-6">
+            <h1>BACK</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -22,64 +48,73 @@
 export default {
   data() {
     return {
-      flipMe: false
+      firstCard: undefined,
+      secondCard: undefined,
+      thirdCard: undefined,
+      flipped: false
     };
+  },
+  methods: {
+    turnOver(event) {
+      console.log(event.target.id);
+      for (let i = 0; i <= 2; i++) {
+        if (event.target.id === i) {
+          event.target.id.classList.toggle("flipme");
+        } else {
+          return;
+        }
+      }
+    }
   }
 };
 </script>
 
-<style scoped>
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background: transparent;
-  width: 300px;
-  height: 500px;
-  perspective: 1500px; /* Remove this if you don't want the 3D effect */
+<style>
+.scene {
+  width: 200px;
+  height: 260px;
+  perspective: 600px;
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
+.card {
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 1s;
   transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container 
-.flip-card:hover .flip-card-inner {
+.flipme {
   transform: rotateY(180deg);
-}*/
+}
 
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
+.card__face {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  left: 10px;
+  top: 10px;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  color: black;
-  background-color: purple;
+.card__face--front {
+  background: red;
 }
 
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: black;
+.card__face--back {
+  background: blue;
   transform: rotateY(180deg);
 }
 
-.flipped {
-  transform: rotateY(180deg);
-}
-
-.tofront {
-  transform: rotateY(360deg);
+.popout {
+  transform: translateZ(80px);
 }
 
 .zoom {
@@ -88,9 +123,5 @@ export default {
 
 .zoom:hover {
   transform: scale(1.03);
-}
-
-.popout {
-  transform: translateZ(80px);
 }
 </style>

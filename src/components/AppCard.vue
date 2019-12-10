@@ -1,6 +1,28 @@
 <template>
-  <div class="scene scene--card zoom">
-    <div class="card" @click="flipped = !flipped" :class="{ flipme: flipped }">
+  <div class="scene scene--card">
+    <div
+      id="1"
+      class="card"
+      @click="flipped = !flipped"
+      :class="{ flipme: flipped }"
+    >
+      <div class="card__face card__face--front">
+        <div class="popout">
+          <h1>FRONT</h1>
+        </div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="popout">
+          <h1>BACK</h1>
+        </div>
+      </div>
+    </div>
+    <div
+      id="2"
+      class="card"
+      @click="flipped = !flipped"
+      :class="{ flipme: flipped }"
+    >
       <div class="card__face card__face--front">
         <div class="popout">
           <h1>FRONT</h1>
@@ -29,9 +51,7 @@ export default {
 .scene {
   width: 200px;
   height: 260px;
-  margin: 40px 0;
   perspective: 600px;
-  margin: auto;
 }
 
 .card {
@@ -41,6 +61,7 @@ export default {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
+  margin: 5px;
 }
 
 .flipme {
