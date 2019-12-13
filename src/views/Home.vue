@@ -1,13 +1,17 @@
 <template>
-  <div class="home h-screen -mt-32"></div>
+  <div class="home">
+    <section-cards></section-cards>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import SectionCards from "../components/SectionCards";
 export default {
   name: "home",
-  components: {}
+  components: {
+    SectionCards
+  }
 };
 </script>
 <style scoped>
