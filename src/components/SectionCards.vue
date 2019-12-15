@@ -25,16 +25,18 @@
             <div
               class="font-normal px-6 py-4 bg-gray-300 border-solid border-gray-700 border-t"
             >
-              <div class="w-9/12 mx-auto">
-                <ul
-                  class="ml-2 font-semibold text-gray-700 text-base font-opensans text-l list-disc text-left"
-                >
-                  <li>What is JS?</li>
-                  <li>Types</li>
-                  <li>Variables & Statements</li>
-                  <li>Operators</li>
-                  <li>Comments</li>
-                </ul>
+              <div class="w-6/12 mx-auto">
+                <div class="flex justify-center">
+                  <ul
+                    class="ml-2 font-semibold text-gray-700 text-base font-opensans text-l list-disc text-left"
+                  >
+                    <li>What is JS?</li>
+                    <li>Data Types</li>
+                    <li>Variables</li>
+                    <li>Operators</li>
+                    <li>Comments</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </article>

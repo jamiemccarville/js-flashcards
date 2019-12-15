@@ -31,7 +31,7 @@
                   <div class="px-10">
                     <div class="text-left">
                       <p>
-                        JavaScript (JS) is a lightweight, interpreted, or
+                        "JavaScript (JS) is a lightweight, interpreted, or
                         just-in-time compiled programming language with
                         first-class functions. While it is most well-known as
                         the scripting language for Web pages, many non-browser
@@ -40,7 +40,7 @@
                         prototype-based, multi-paradigm, single-threaded,
                         dynamic language, supporting object-oriented,
                         imperative, and declarative (e.g. functional
-                        programming) styles.
+                        programming) styles."
                       </p>
 
                       <p class="italic ml-4">
@@ -155,6 +155,7 @@
         </div>
 
         <!-- END Column -->
+
         <!-- Column -->
         <div
           class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
@@ -173,14 +174,56 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">Variables & Statements</div>
+                <div class="popout text-6xl font-sans font-semibold">Variables</div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
                 <div class="popout font-sans font-light">
                   <div class="px-10">
-                    <h3 class="font-sans uppercase text-3xl mb-2 font-normal">8 Data Types</h3>
+                    <div class="text-left">
+                      <p class="font-semibold">Variables are containers that hold reusable data</p>
+                      <p class="underline mt-3">3 ways to declare (create) a variable:</p>
+                      <ul class="ml-4">
+                        <li>
+                          <span class="font-bold mr-2">var:</span>declares a
+                          variable
+                        </li>
+                        <li>
+                          <span class="font-bold mr-2">let:</span>declares a
+                          block-scoped, local variable
+                        </li>
+                        <li>
+                          <span class="font-bold mr-2">const:</span>declares a
+                          block-scoped, read-only named constant
+                        </li>
+                      </ul>
+                      <p class="underline mt-2">Variable Assignment</p>
+                      <p>
+                        The declared variable is assigned data using the
+                        assignment operator "=". The value of the assigned data
+                        can be any of the following
+                      </p>
+                      <div class="w-6/12 mx-auto mt-2">
+                        <div class="flex justify-around w-full">
+                          <div>
+                            <ul class="list-disc">
+                              <li>String</li>
+                              <li>Number</li>
+                              <li>Boolean</li>
+                              <li>Null</li>
+                            </ul>
+                          </div>
+                          <div>
+                            <ul class="list-disc">
+                              <li>Undefined</li>
+                              <li>an Array</li>
+                              <li>an Object</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="text-left"></div>
                   </div>
                 </div>
@@ -188,6 +231,122 @@
             </div>
           </div>
           <!-- Card 3 Ends  -->
+        </div>
+
+        <!-- END Column -->
+        <!-- Column -->
+        <div
+          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
+        >
+          <!-- Card 4 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                fourthCard == undefined
+                  ? (fourthCard = 1)
+                  : (fourthCard = undefined)
+              "
+              :class="{ flipme: fourthCard == 1 }"
+            >
+              <div
+                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+              >
+                <div class="popout text-6xl font-sans font-semibold">Comments</div>
+              </div>
+              <div
+                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+              >
+                <div class="popout font-sans font-light">
+                  <div class="px-10">
+                    <div class="mb-6 font-semibold text-2xl">
+                      <h3>2 Types of Comments</h3>
+                    </div>
+                    <div class="flex justify-center">
+                      <img
+                        src="../assets/js-comments.svg"
+                        alt="comments code
+                      snippet"
+                        class="h-48 w-auto rounded-lg"
+                      />
+                    </div>
+                    <div class="mt-6 text-left w-11/12 mx-auto">
+                      <ul class="list-disc">
+                        <li>
+                          Comments are treated like white space and they are
+                          discarded when the script is executed
+                        </li>
+                        <li>
+                          They can be used to leave notes or descriptions of
+                          code and also to prevent a selection of code from
+                          running
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 Ends  -->
+        </div>
+
+        <!-- END Column -->
+        <!-- Column -->
+        <div
+          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
+        >
+          <!-- Card 5 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                fifthCard == undefined
+                  ? (fifthCard = 1)
+                  : (fifthCard = undefined)
+              "
+              :class="{ flipme: fifthCard == 1 }"
+            >
+              <div
+                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+              >
+                <div class="popout text-6xl font-sans font-semibold">Operators</div>
+              </div>
+              <div
+                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+              >
+                <div class="popout font-sans font-light">
+                  <div class="px-10">
+                    <div class="mb-6 font-semibold text-2xl">
+                      <h3>2 Types of Comments</h3>
+                    </div>
+                    <div class="flex justify-center">
+                      <img
+                        src="../assets/js-comments.svg"
+                        alt="comments code
+                      snippet"
+                        class="h-48 w-auto rounded-lg"
+                      />
+                    </div>
+                    <div class="mt-6 text-left w-11/12 mx-auto">
+                      <ul class="list-disc">
+                        <li>
+                          Comments are treated like white space and they are
+                          discarded when the script is executed
+                        </li>
+                        <li>
+                          They can be used to leave notes or descriptions of
+                          code and also to prevent a selection of code from
+                          running
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 Ends  -->
         </div>
 
         <!-- END Column -->
@@ -202,7 +361,9 @@ export default {
     return {
       firstCard: undefined,
       secondCard: undefined,
-      thirdCard: undefined
+      thirdCard: undefined,
+      fourthCard: undefined,
+      fifthCard: undefined
     };
   }
 };
@@ -261,6 +422,5 @@ export default {
   transform: scale(1.03);
 }
 ul > li {
-  padding: 5px 0px;
 }
 </style>
