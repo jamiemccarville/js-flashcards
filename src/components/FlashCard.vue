@@ -335,16 +335,56 @@
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
                 <div class="popout font-sans font-light">
+                  <h3 class="mb-4 text-xl font-semibold">
+                    Click the buttons to see the Operators
+                  </h3>
                   <div class="px-10">
                     <div class="mb-6 font-semibold text-xl">
-                      <h3>Hover over the buttons to see the operators</h3>
-                      <button
-                        class="bg-basicdark text-basiclight uppercase font-semibold px-2 py-1 rounded"
-                        @mouseover="showModal = true"
+                      <div
+                        class="flex flex-col w-2/4 mx-auto items-center justify-center"
                       >
-                        Arithmetic
-                      </button>
+                        <button
+                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          @click.stop="showArrith = true"
+                        >
+                          Arithmetic
+                        </button>
+                        <button
+                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          @click.stop="showAssign = true"
+                        >
+                          Assignment
+                        </button>
+                        <button
+                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          @click.stop="showCompar = true"
+                        >
+                          Comparison
+                        </button>
+                        <button
+                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          @click.stop="showLogical = true"
+                        >
+                          Logical
+                        </button>
+                        <button
+                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded"
+                          @click.stop="showType = true"
+                        >
+                          type
+                        </button>
+                      </div>
                     </div>
+                    <p class="pb-2">
+                      Check out the
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators"
+                        target="blank "
+                        class="underline hover:text-basicred"
+                        >MDN Docs</a
+                      >
+                      for info on Bitwise Operators
+                    </p>
                   </div>
                 </div>
               </div>
@@ -357,24 +397,64 @@
       </div>
     </div>
     <!-- <div @mouseover="modalPlease" @mouseleave="modalPlease"></div> -->
-    <modal v-if="showModal" @close="showModal = false">
+    <app-modal v-if="showArrith" @close="(showArrith = false), (hover = false)">
       <template v-slot:header>
         <h3 class="uppercase text-xl">Arithmetic Operators</h3>
       </template>
       <template v-slot:body>
         <arith-operators></arith-operators>
       </template>
-    </modal>
+    </app-modal>
+    <app-modal v-if="showAssign" @close="showAssign = false">
+      <template v-slot:header>
+        <h3 class="uppercase text-xl">Assignment Operators</h3>
+      </template>
+      <template v-slot:body>
+        <assign-operators></assign-operators>
+      </template>
+    </app-modal>
+    <app-modal v-if="showCompar" @close="showCompar = false">
+      <template v-slot:header>
+        <h3 class="uppercase text-xl">Comparison Operators</h3>
+      </template>
+      <template v-slot:body>
+        <compar-operators></compar-operators>
+      </template>
+    </app-modal>
+    <app-modal v-if="showLogical" @close="showLogical = false">
+      <template v-slot:header>
+        <h3 class="uppercase text-xl">Logical Operators</h3>
+      </template>
+      <template v-slot:body>
+        <logical-operators></logical-operators>
+      </template>
+    </app-modal>
+    <app-modal v-if="showType" @close="showType = false">
+      <template v-slot:header>
+        <h3 class="uppercase text-xl">Type Operators</h3>
+      </template>
+      <template v-slot:body>
+        <type-operators></type-operators>
+      </template>
+    </app-modal>
   </div>
 </template>
 
 <script>
-import modal from "../components/Modal";
+import AppModal from "../components/AppModal";
 import ArithOperators from "../components/modal-contents/ArithOperators";
+import AssignOperators from "../components/modal-contents/AssignOperators";
+import ComparOperators from "../components/modal-contents/ComparOperators";
+import LogicalOperators from "../components/modal-contents/LogicalOperators";
+import TypeOperators from "../components/modal-contents/TypeOperators";
 export default {
   components: {
-    modal,
-    ArithOperators
+    AppModal,
+    ArithOperators,
+    AssignOperators,
+    ComparOperators,
+    LogicalOperators,
+    TypeOperators
   },
   data() {
     return {
@@ -384,12 +464,17 @@ export default {
       fourthCard: undefined,
       fifthCard: undefined,
       showModal: false,
-      hover1: false
+      showArrith: false,
+      showAssign: false,
+      showCompar: false,
+      showLogical: false,
+      showType: false,
+      hoverButton: false
     };
   },
   methods: {
-    modalPlease: function() {
-      this.hover1 = true;
+    throwAlert: function() {
+      alert("working");
     }
   }
 };
