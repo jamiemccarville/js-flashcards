@@ -22,9 +22,7 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">
-                  What is JS?
-                </div>
+                <div class="popout text-6xl font-sans font-semibold">What is JS?</div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
@@ -51,8 +49,7 @@
                           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                           target="blank"
                           class="underline cursor-alias hover:text-basicred"
-                          >here</a
-                        >
+                        >here</a>
                         to read more
                       </p>
                       <br />
@@ -63,8 +60,7 @@
                             href="https://en.wikipedia.org/wiki/JavaScript"
                             target="black"
                             class="underline cursor-alias hover:text-basicred"
-                            >Wikepedia</a
-                          >
+                          >Wikepedia</a>
                         </li>
                         <li>
                           You can also find a quick JS intro at
@@ -72,8 +68,7 @@
                             href="https://javascript.info/intro"
                             target="blank"
                             class="underline hover:text-basicred cursor-alias"
-                            >javascript.info</a
-                          >
+                          >javascript.info</a>
                         </li>
                       </ul>
                     </div>
@@ -104,18 +99,14 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">
-                  Data Types
-                </div>
+                <div class="popout text-6xl font-sans font-semibold">Data Types</div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
                 <div class="popout font-sans font-light">
                   <div class="px-10">
-                    <h3 class="font-sans uppercase text-3xl mb-2 font-normal">
-                      8 Data Types
-                    </h3>
+                    <h3 class="font-sans uppercase text-3xl mb-2 font-normal">8 Data Types</h3>
                     <div class="text-left">
                       <ul>
                         <li class="font-normal underline">7 Primitive</li>
@@ -183,9 +174,7 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">
-                  Variables
-                </div>
+                <div class="popout text-6xl font-sans font-semibold">Variables</div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
@@ -193,12 +182,8 @@
                 <div class="popout font-sans font-light">
                   <div class="px-10">
                     <div class="text-left">
-                      <p class="font-semibold">
-                        Variables are containers that hold reusable data
-                      </p>
-                      <p class="underline mt-3">
-                        3 ways to declare (create) a variable:
-                      </p>
+                      <p class="font-semibold">Variables are containers that hold reusable data</p>
+                      <p class="underline mt-3">3 ways to declare (create) a variable:</p>
                       <ul class="ml-4">
                         <li>
                           <span class="font-bold mr-2">var:</span>declares a
@@ -267,9 +252,7 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">
-                  Comments
-                </div>
+                <div class="popout text-6xl font-sans font-semibold">Comments</div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
@@ -327,52 +310,36 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">
-                  Operators
-                </div>
+                <div class="popout text-6xl font-sans font-semibold">Operators</div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
                 <div class="popout font-sans font-light">
-                  <h3 class="mb-4 text-xl font-semibold">
-                    Click the buttons to see the Operators
-                  </h3>
+                  <h3 class="mb-4 text-xl font-semibold">Click the buttons to see the Operators</h3>
                   <div class="px-10">
                     <div class="mb-6 font-semibold text-xl">
-                      <div
-                        class="flex flex-col w-2/4 mx-auto items-center justify-center"
-                      >
+                      <div class="flex flex-col w-2/4 mx-auto items-center justify-center">
                         <button
                           class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
                           @click.stop="showArrith = true"
-                        >
-                          Arithmetic
-                        </button>
+                        >Arithmetic</button>
                         <button
                           class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
                           @click.stop="showAssign = true"
-                        >
-                          Assignment
-                        </button>
+                        >Assignment</button>
                         <button
                           class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
                           @click.stop="showCompar = true"
-                        >
-                          Comparison
-                        </button>
+                        >Comparison</button>
                         <button
                           class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
                           @click.stop="showLogical = true"
-                        >
-                          Logical
-                        </button>
+                        >Logical</button>
                         <button
                           class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded"
                           @click.stop="showType = true"
-                        >
-                          type
-                        </button>
+                        >type</button>
                       </div>
                     </div>
                     <p class="pb-2">
@@ -380,9 +347,8 @@
                       <a
                         href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators"
                         target="blank "
-                        class="underline hover:text-basicred"
-                        >MDN Docs</a
-                      >
+                        class="underline hover:text-basicred cursor-alias"
+                      >MDN Docs</a>
                       for info on Bitwise Operators
                     </p>
                   </div>
