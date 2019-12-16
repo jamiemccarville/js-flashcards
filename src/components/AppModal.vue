@@ -14,10 +14,12 @@
           <div class="modal-footer">
             <slot name="footer"></slot>
           </div>
-          <button
-            class="text-basicdark bg-basiclight mt-4 hover:text-basiclight hover:bg-basicdark border-2 border-basicdark border-solid rounded px-2 py-1 font-semibold"
-            @click="$emit('close')"
-          >Got it!</button>
+          <div class="flex justify-end">
+            <button
+              class="text-basicdark bg-basiclight mt-4 hover:text-basiclight hover:bg-basicdark border-2 border-basicdark border-solid rounded px-2 py-1 font-semibold"
+              @click="$emit('close')"
+            >Got it!</button>
+          </div>
         </div>
       </div>
     </div>
