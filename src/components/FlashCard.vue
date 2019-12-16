@@ -319,27 +319,7 @@
                   <div class="px-10">
                     <div class="mb-6 font-semibold text-2xl">
                       <h3>2 Types of Comments</h3>
-                    </div>
-                    <div class="flex justify-center">
-                      <img
-                        src="../assets/js-comments.svg"
-                        alt="comments code
-                      snippet"
-                        class="h-48 w-auto rounded-lg"
-                      />
-                    </div>
-                    <div class="mt-6 text-left w-11/12 mx-auto">
-                      <ul class="list-disc">
-                        <li>
-                          Comments are treated like white space and they are
-                          discarded when the script is executed
-                        </li>
-                        <li>
-                          They can be used to leave notes or descriptions of
-                          code and also to prevent a selection of code from
-                          running
-                        </li>
-                      </ul>
+                      <button @mouseover="showModal = true">Show Modal</button>
                     </div>
                   </div>
                 </div>
@@ -352,19 +332,32 @@
         <!-- END Column -->
       </div>
     </div>
+    <!-- <div @mouseover="modalPlease" @mouseleave="modalPlease"></div> -->
+    <modal v-if="showModal" @close="showModal = false"></modal>
   </div>
 </template>
 
 <script>
+import modal from "../components/Modal";
 export default {
+  components: {
+    modal
+  },
   data() {
     return {
       firstCard: undefined,
       secondCard: undefined,
       thirdCard: undefined,
       fourthCard: undefined,
-      fifthCard: undefined
+      fifthCard: undefined,
+      showModal: false,
+      hover1: false
     };
+  },
+  methods: {
+    modalPlease: function() {
+      this.hover1 = true;
+    }
   }
 };
 </script>
