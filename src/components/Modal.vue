@@ -1,8 +1,8 @@
 <template>
-  <transition name="modal">
-    <div class="modal-mask">
+  <transition name="modal ">
+    <div class="modal-mask font-sans text-basicdark">
       <div class="modal-wrapper">
-        <div class="modal-container">
+        <div class="modal-container rounded-lg bg-basiclight">
           <div class="modal-header">
             <slot name="header">default header</slot>
           </div>
@@ -12,13 +12,12 @@
           </div>
 
           <div class="modal-footer">
-            <slot name="footer">
-              default footer
-              <button class="modal-default-button" @click="$emit('close')">
-                OK
-              </button>
-            </slot>
+            <slot name="footer"></slot>
           </div>
+          <button
+            class="text-basicdark bg-basiclight mt-4 hover:text-basiclight hover:bg-basicdark border-2 border-basicdark border-solid rounded px-2 py-1 font-semibold"
+            @click="$emit('close')"
+          >Got it!</button>
         </div>
       </div>
     </div>
@@ -51,11 +50,9 @@ export default {};
   width: 300px;
   margin: 0px auto;
   padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 2px;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 .modal-header h3 {
@@ -68,7 +65,6 @@ export default {};
 }
 
 .modal-default-button {
-  float: right;
 }
 
 /*

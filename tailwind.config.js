@@ -40,7 +40,9 @@ module.exports = {
         alias: "alias"
       },
       colors: {
-        basicred: "hsl(355.2, 84.3%, 62.5%)"
+        basicred: "hsl(355.2, 84.3%, 62.5%)",
+        basicdark: "hsl(355.2, 84.3%, 20%)",
+        basiclight: "hsl(355.2, 84.3%, 95%)"
       }
     }
   },

@@ -22,7 +22,9 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">What is JS?</div>
+                <div class="popout text-6xl font-sans font-semibold">
+                  What is JS?
+                </div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
@@ -49,7 +51,8 @@
                           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                           target="blank"
                           class="underline cursor-alias hover:text-basicred"
-                        >here</a>
+                          >here</a
+                        >
                         to read more
                       </p>
                       <br />
@@ -60,7 +63,8 @@
                             href="https://en.wikipedia.org/wiki/JavaScript"
                             target="black"
                             class="underline cursor-alias hover:text-basicred"
-                          >Wikepedia</a>
+                            >Wikepedia</a
+                          >
                         </li>
                         <li>
                           You can also find a quick JS intro at
@@ -68,7 +72,8 @@
                             href="https://javascript.info/intro"
                             target="blank"
                             class="underline hover:text-basicred cursor-alias"
-                          >javascript.info</a>
+                            >javascript.info</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -99,14 +104,18 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">Data Types</div>
+                <div class="popout text-6xl font-sans font-semibold">
+                  Data Types
+                </div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
                 <div class="popout font-sans font-light">
                   <div class="px-10">
-                    <h3 class="font-sans uppercase text-3xl mb-2 font-normal">8 Data Types</h3>
+                    <h3 class="font-sans uppercase text-3xl mb-2 font-normal">
+                      8 Data Types
+                    </h3>
                     <div class="text-left">
                       <ul>
                         <li class="font-normal underline">7 Primitive</li>
@@ -174,7 +183,9 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">Variables</div>
+                <div class="popout text-6xl font-sans font-semibold">
+                  Variables
+                </div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
@@ -182,8 +193,12 @@
                 <div class="popout font-sans font-light">
                   <div class="px-10">
                     <div class="text-left">
-                      <p class="font-semibold">Variables are containers that hold reusable data</p>
-                      <p class="underline mt-3">3 ways to declare (create) a variable:</p>
+                      <p class="font-semibold">
+                        Variables are containers that hold reusable data
+                      </p>
+                      <p class="underline mt-3">
+                        3 ways to declare (create) a variable:
+                      </p>
                       <ul class="ml-4">
                         <li>
                           <span class="font-bold mr-2">var:</span>declares a
@@ -252,7 +267,9 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">Comments</div>
+                <div class="popout text-6xl font-sans font-semibold">
+                  Comments
+                </div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
@@ -310,16 +327,23 @@
               <div
                 class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
-                <div class="popout text-6xl font-sans font-semibold">Operators</div>
+                <div class="popout text-6xl font-sans font-semibold">
+                  Operators
+                </div>
               </div>
               <div
                 class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
               >
                 <div class="popout font-sans font-light">
                   <div class="px-10">
-                    <div class="mb-6 font-semibold text-2xl">
-                      <h3>2 Types of Comments</h3>
-                      <button @mouseover="showModal = true">Show Modal</button>
+                    <div class="mb-6 font-semibold text-xl">
+                      <h3>Hover over the buttons to see the operators</h3>
+                      <button
+                        class="bg-basicdark text-basiclight uppercase font-semibold px-2 py-1 rounded"
+                        @mouseover="showModal = true"
+                      >
+                        Arithmetic
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -333,15 +357,24 @@
       </div>
     </div>
     <!-- <div @mouseover="modalPlease" @mouseleave="modalPlease"></div> -->
-    <modal v-if="showModal" @close="showModal = false"></modal>
+    <modal v-if="showModal" @close="showModal = false">
+      <template v-slot:header>
+        <h3 class="uppercase text-xl">Arithmetic Operators</h3>
+      </template>
+      <template v-slot:body>
+        <arith-operators></arith-operators>
+      </template>
+    </modal>
   </div>
 </template>
 
 <script>
 import modal from "../components/Modal";
+import ArithOperators from "../components/modal-contents/ArithOperators";
 export default {
   components: {
-    modal
+    modal,
+    ArithOperators
   },
   data() {
     return {
