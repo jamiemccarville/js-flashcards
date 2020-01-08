@@ -1,22 +1,22 @@
 <template>
-  <div class="aboutBg min-h-screen -mt-24">
-    <flash-card></flash-card>
+  <div class="min-h-screen page-background">
+    <basics-cards></basics-cards>
   </div>
 </template>
 
 <script>
 //import AppCard from "../components/AppCard";
-import FlashCard from "../components/FlashCard";
+import BasicsCards from "../components/BasicsCards";
 //import HoverCard from "../components/HoverCard";
 
 export default {
   components: {
-    FlashCard
+    BasicsCards
   }
 };
 </script>
 <style scoped>
-.aboutBg {
+.page-background {
   background-color: hsl(355.2, 84.3%, 62.5%);
 }
 </style>

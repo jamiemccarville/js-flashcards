@@ -42,7 +42,10 @@ module.exports = {
       colors: {
         basicred: "hsl(355.2, 84.3%, 62.5%)",
         basicdark: "hsl(355.2, 84.3%, 20%)",
-        basiclight: "hsl(355.2, 84.3%, 95%)"
+        basiclight: "hsl(355.2, 84.3%, 95%)",
+        fnorange: "hsl(22.2, 84.3%, 62.5%)",
+        fndark: "hsl(22.2, 84.3%, 20%)",
+        fnlight: "hsl(22.2, 84.3%, 95%)"
       }
     }
   },

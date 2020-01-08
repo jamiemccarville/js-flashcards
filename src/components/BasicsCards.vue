@@ -437,11 +437,6 @@ export default {
       showType: false,
       hoverButton: false
     };
-  },
-  methods: {
-    throwAlert: function() {
-      alert("working");
-    }
   }
 };
 </script>
@@ -470,7 +465,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: hsl(351.4, 84%, 20%);
+  color: hsl(352.2, 84%, 20%);
   text-align: center;
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
@@ -478,13 +473,13 @@ export default {
 }
 
 .card__face--front {
-  background: hsl(355.2, 84.3%, 95%);
+  background: hsl(352.2, 84.3%, 95%);
 }
 
 .card__face--back {
-  background: hsl(355.2, 84.3%, 95%);
+  background: hsl(352.2, 84.3%, 95%);
   transform: rotateY(180deg);
-  color: hsl(351.4, 84%, 20%);
+  color: hsl(352.2, 84%, 20%);
 }
 
 .popout {
@@ -497,7 +492,5 @@ export default {
 
 .zoom:hover {
   transform: scale(1.03);
-}
-ul > li {
 }
 </style>
