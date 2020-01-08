@@ -30,7 +30,7 @@
                     <div class="text-left">
                       <p>
                         "Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.
-                        <br>In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are Function objects."
+                        <br />In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are Function objects."
                       </p>
 
                       <p class="ml-4 italic">
@@ -43,7 +43,6 @@
                         to read more
                       </p>
                       <br />
-                      
                     </div>
                   </div>
                 </div>
@@ -70,51 +69,32 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Data Types</div>
+                <div class="font-sans text-6xl font-semibold popout">
+                  Functions:
+                  <br />Quick Overview
+                </div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <h3 class="mb-2 font-sans text-3xl font-normal uppercase">8 Data Types</h3>
                     <div class="text-left">
-                      <ul>
-                        <li class="font-normal underline">7 Primitive</li>
-                        <ol class="pl-4 list-decimal list-inside">
-                          <li>
-                            <span class="mr-2 font-bold">Boolean:</span> True
-                            and False
-                          </li>
-                          <li>
-                            <span class="mr-2 font-bold">null:</span> a special
-                            keyword denoting a null value
-                          </li>
-                          <li>
-                            <span class="mr-2 font-bold">undefined:</span> A
-                            top-level property whose value is not defined
-                          </li>
-                          <li>
-                            <span class="mr-2 font-bold">Number:</span> An
-                            integer or floating point number
-                          </li>
-                          <li>
-                            <span class="mr-2 font-bold">BigInt:</span> An
-                            integer with arbitrary precision
-                          </li>
-                          <li>
-                            <span class="mr-2 font-bold">String:</span> A
-                            sequence of characters that represent a text value
-                          </li>
-                          <li>
-                            <span class="mr-2 font-bold">Symbol:</span> A data
-                            type whose instances are unique and immutable
-                          </li>
-                        </ol>
+                      <ul class="list-disc list-inside">
                         <li>
-                          <span class="font-bold">+ Object</span> (see objects
-                          section for more details)
+                          A function is a
+                          <i>subprogram</i> created to perform a certain task
                         </li>
+                        <li>
+                          To execute a function it has to be called. This is referred to as
+                          <i>invoking</i> a function
+                        </li>
+                        <li>Values can be passed into functions and used within</li>
+                        <li>
+                          Functions will
+                          <strong>always</strong> return a value. In JS, if there is no specific return value specified "undefined" will be retuned
+                        </li>
+                        <li>Functions are objects</li>
                       </ul>
                     </div>
                   </div>
@@ -143,56 +123,13 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Variables</div>
+                <div class="font-sans text-6xl font-semibold popout">Defining a Function</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <div class="text-left">
-                      <p class="font-semibold">Variables are containers that hold reusable data</p>
-                      <p class="mt-3 underline">3 ways to declare (create) a variable:</p>
-                      <ul class="ml-4">
-                        <li>
-                          <span class="mr-2 font-bold">var:</span>declares a
-                          variable
-                        </li>
-                        <li>
-                          <span class="mr-2 font-bold">let:</span>declares a
-                          block-scoped, local variable
-                        </li>
-                        <li>
-                          <span class="mr-2 font-bold">const:</span>declares a
-                          block-scoped, read-only named constant
-                        </li>
-                      </ul>
-                      <p class="mt-2 underline">Variable Assignment</p>
-                      <p>
-                        The declared variable is assigned data using the
-                        assignment operator "=". The value of the assigned data
-                        can be any of the following
-                      </p>
-                      <div class="w-6/12 mx-auto mt-2">
-                        <div class="flex justify-around w-full">
-                          <div>
-                            <ul class="list-disc">
-                              <li>String</li>
-                              <li>Number</li>
-                              <li>Boolean</li>
-                              <li>Null</li>
-                            </ul>
-                          </div>
-                          <div>
-                            <ul class="list-disc">
-                              <li>Undefined</li>
-                              <li>an Array</li>
-                              <li>an Object</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div class="text-left"></div>
                   </div>
                 </div>
@@ -387,7 +324,7 @@ export default {
 }
 
 .card__face--back {
-  background: hsl(355.2, 84.3%, 95%);
+  background: hsl(22.2, 84.3%, 95%);
   transform: rotateY(180deg);
   color: hsl(22.2, 84%, 20%);
 }
