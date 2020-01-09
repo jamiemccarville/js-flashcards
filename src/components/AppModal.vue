@@ -1,8 +1,8 @@
 <template>
   <transition name="modal ">
-    <div class="modal-mask font-sans text-basicdark">
+    <div class="font-sans modal-mask" :class="textColor">
       <div class="modal-wrapper">
-        <div class="modal-container rounded-lg bg-basiclight">
+        <div class="rounded-lg modal-container" :class="backgroundColor">
           <div class="modal-header">
             <slot name="header">default header</slot>
           </div>
@@ -16,7 +16,8 @@
           </div>
           <div class="flex justify-end">
             <button
-              class="text-basicdark bg-basiclight mt-4 hover:text-basiclight hover:bg-basicdark border-2 border-basicdark border-solid rounded px-2 py-1 font-semibold"
+              class="px-2 py-1 mt-4 font-semibold border-2 border-solid rounded"
+              :class="buttonColor"
               @click="$emit('close')"
             >Got it!</button>
           </div>
@@ -27,7 +28,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    backgroundColor: {
+      type: String,
+      required: true
+    },
+    textColor: {
+      type: String,
+      required: true
+    },
+    buttonColor: {
+      type: String,
+      required: true
+    }
+  }
+};
 </script>
 
 <style scoped>

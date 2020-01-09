@@ -92,7 +92,7 @@
                         <li>Values can be passed into functions and used within</li>
                         <li>
                           Functions will
-                          <strong>always</strong> return a value. In JS, if there is no specific return value specified "undefined" will be retuned
+                          <strong>always</strong> return a value. In JS, if there is no specific return value specified "undefined" will be returned
                         </li>
                         <li>Functions are objects</li>
                       </ul>
@@ -129,13 +129,32 @@
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
+                  <h3
+                    class="px-10 pt-5 mb-4 mb-8 text-xl font-semibold"
+                  >Click the buttons to see the different ways to define a function</h3>
                   <div class="px-10">
-                    <div class="text-left"></div>
+                    <div class="mb-6 text-xl font-semibold">
+                      <div class="flex flex-col items-center justify-center w-2/4 mx-auto">
+                        <button
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
+                          @click.stop="showFnDeclaration = true"
+                        >Function Declaration</button>
+                        <button
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
+                          @click.stop="showFnExpression = true"
+                        >Function Expression</button>
+                        <button
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
+                          @click.stop="showArrowFnExpression = true"
+                        >Arrow Function Expression</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- Card 3 Ends  -->
         </div>
 
@@ -194,81 +213,66 @@
           </div>
           <!-- Card 4 Ends  -->
         </div>
-
-        <!-- END Column -->
-        <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
-          <!-- Card 5 Starts -->
-          <div class="scene scene--card zoom">
-            <div
-              class="card"
-              @click="
-                fifthCard == undefined
-                  ? (fifthCard = 1)
-                  : (fifthCard = undefined)
-              "
-              :class="{ flipme: fifthCard == 1 }"
-            >
-              <div
-                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
-              >
-                <div class="font-sans text-6xl font-semibold popout">Operators</div>
-              </div>
-              <div
-                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
-              >
-                <div class="font-sans font-light popout">
-                  <h3 class="mb-4 text-xl font-semibold">Click the buttons to see the Operators</h3>
-                  <div class="px-10">
-                    <div class="mb-6 text-xl font-semibold">
-                      <div class="flex flex-col items-center justify-center w-2/4 mx-auto">
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
-                          @click.stop="showArrith = true"
-                        >Arithmetic</button>
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
-                          @click.stop="showAssign = true"
-                        >Assignment</button>
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
-                          @click.stop="showCompar = true"
-                        >Comparison</button>
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
-                          @click.stop="showLogical = true"
-                        >Logical</button>
-                        <button
-                          class="w-full px-2 py-1 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
-                          @click.stop="showType = true"
-                        >type</button>
-                      </div>
-                    </div>
-                    <p class="pb-2">
-                      Check out the
-                      <a
-                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators"
-                        target="blank "
-                        class="underline hover:text-basicred cursor-alias"
-                      >MDN Docs</a>
-                      for info on Bitwise Operators
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 5 Ends  -->
-        </div>
-
-        <!-- END Column -->
       </div>
+      <!-- END Column -->
     </div>
+    <app-modal
+      v-if="showFnDeclaration"
+      @close="showFnDeclaration = false"
+      backgroundColor="bg-fnlight"
+      textColor="text-fndark"
+      buttonColor="bg-fnlight hover:text-fnlight hover:bg-fndark border-fndark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">Function Declaration</h3>
+      </template>
+      <template v-slot:body>
+        <fn-decl></fn-decl>
+      </template>
+    </app-modal>
+    <app-modal
+      v-if="showFnExpression"
+      @close="showFnExpression = false"
+      backgroundColor="bg-fnlight"
+      textColor="text-fndark"
+      buttonColor="bg-fnlight hover:text-fnlight hover:bg-fndark border-fndark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">Function Expression</h3>
+      </template>
+      <template v-slot:body>
+        <fn-expr></fn-expr>
+      </template>
+    </app-modal>
+    <app-modal
+      v-if="showArrowFnExpression"
+      @close="showArrowFnExpression = false"
+      backgroundColor="bg-fnlight"
+      textColor="text-fndark"
+      buttonColor="bg-fnlight hover:text-fnlight hover:bg-fndark border-fndark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">Arrow Function Expression</h3>
+      </template>
+      <template v-slot:body>
+        <arrow-fn-expr></arrow-fn-expr>
+      </template>
+    </app-modal>
   </div>
 </template>
 
 <script>
+import AppModal from "../components/AppModal";
+import FnDecl from "../components/modal-contents/functions/FnDecl";
+import FnExpr from "../components/modal-contents/functions/FnExpr";
+import ArrowFnExpr from "../components/modal-contents/functions/ArrowFnExpr";
 export default {
+  components: {
+    AppModal,
+    FnDecl,
+    FnExpr,
+    ArrowFnExpr
+  },
   data() {
     return {
       firstCard: undefined,
@@ -277,12 +281,9 @@ export default {
       fourthCard: undefined,
       fifthCard: undefined,
       showModal: false,
-      showArrith: false,
-      showAssign: false,
-      showCompar: false,
-      showLogical: false,
-      showType: false,
-      hoverButton: false
+      showFnDeclaration: false,
+      showFnExpression: false,
+      showArrowFnExpression: false
     };
   }
 };

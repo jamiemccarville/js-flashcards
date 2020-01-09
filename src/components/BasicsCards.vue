@@ -1,13 +1,11 @@
 <template>
   <div class="py-40">
-    <div class="w-7/8 sm:w-10/12 md:w-11/12 mx-auto md:px-12">
+    <div class="mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
       <div class="flex flex-wrap justify-center">
         <!--  -->
 
         <!-- Column -->
-        <div
-          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 1 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -20,14 +18,14 @@
               :class="{ flipme: firstCard == 1 }"
             >
               <div
-                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="popout text-6xl font-sans font-semibold">What is JS?</div>
+                <div class="font-sans text-6xl font-semibold popout">What is JS?</div>
               </div>
               <div
-                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
-                <div class="popout font-sans font-light">
+                <div class="font-sans font-light popout">
                   <div class="px-10">
                     <div class="text-left">
                       <p>
@@ -43,7 +41,7 @@
                         programming) styles."
                       </p>
 
-                      <p class="italic ml-4">
+                      <p class="ml-4 italic">
                         - excerpt from MDN docs. Click
                         <a
                           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -82,9 +80,7 @@
 
         <!-- END Column -->
         <!-- Column -->
-        <div
-          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 2 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -97,46 +93,46 @@
               :class="{ flipme: secondCard == 1 }"
             >
               <div
-                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="popout text-6xl font-sans font-semibold">Data Types</div>
+                <div class="font-sans text-6xl font-semibold popout">Data Types</div>
               </div>
               <div
-                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
-                <div class="popout font-sans font-light">
+                <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <h3 class="font-sans uppercase text-3xl mb-2 font-normal">8 Data Types</h3>
+                    <h3 class="mb-2 font-sans text-3xl font-normal uppercase">8 Data Types</h3>
                     <div class="text-left">
                       <ul>
                         <li class="font-normal underline">7 Primitive</li>
-                        <ol class="list-decimal list-inside pl-4">
+                        <ol class="pl-4 list-decimal list-inside">
                           <li>
-                            <span class="font-bold mr-2">Boolean:</span> True
+                            <span class="mr-2 font-bold">Boolean:</span> True
                             and False
                           </li>
                           <li>
-                            <span class="font-bold mr-2">null:</span> a special
+                            <span class="mr-2 font-bold">null:</span> a special
                             keyword denoting a null value
                           </li>
                           <li>
-                            <span class="font-bold mr-2">undefined:</span> A
+                            <span class="mr-2 font-bold">undefined:</span> A
                             top-level property whose value is not defined
                           </li>
                           <li>
-                            <span class="font-bold mr-2">Number:</span> An
+                            <span class="mr-2 font-bold">Number:</span> An
                             integer or floating point number
                           </li>
                           <li>
-                            <span class="font-bold mr-2">BigInt:</span> An
+                            <span class="mr-2 font-bold">BigInt:</span> An
                             integer with arbitrary precision
                           </li>
                           <li>
-                            <span class="font-bold mr-2">String:</span> A
+                            <span class="mr-2 font-bold">String:</span> A
                             sequence of characters that represent a text value
                           </li>
                           <li>
-                            <span class="font-bold mr-2">Symbol:</span> A data
+                            <span class="mr-2 font-bold">Symbol:</span> A data
                             type whose instances are unique and immutable
                           </li>
                         </ol>
@@ -157,9 +153,7 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div
-          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 3 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -172,33 +166,33 @@
               :class="{ flipme: thirdCard == 1 }"
             >
               <div
-                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="popout text-6xl font-sans font-semibold">Variables</div>
+                <div class="font-sans text-6xl font-semibold popout">Variables</div>
               </div>
               <div
-                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
-                <div class="popout font-sans font-light">
+                <div class="font-sans font-light popout">
                   <div class="px-10">
                     <div class="text-left">
                       <p class="font-semibold">Variables are containers that hold reusable data</p>
-                      <p class="underline mt-3">3 ways to declare (create) a variable:</p>
+                      <p class="mt-3 underline">3 ways to declare (create) a variable:</p>
                       <ul class="ml-4">
                         <li>
-                          <span class="font-bold mr-2">var:</span>declares a
+                          <span class="mr-2 font-bold">var:</span>declares a
                           variable
                         </li>
                         <li>
-                          <span class="font-bold mr-2">let:</span>declares a
+                          <span class="mr-2 font-bold">let:</span>declares a
                           block-scoped, local variable
                         </li>
                         <li>
-                          <span class="font-bold mr-2">const:</span>declares a
+                          <span class="mr-2 font-bold">const:</span>declares a
                           block-scoped, read-only named constant
                         </li>
                       </ul>
-                      <p class="underline mt-2">Variable Assignment</p>
+                      <p class="mt-2 underline">Variable Assignment</p>
                       <p>
                         The declared variable is assigned data using the
                         assignment operator "=". The value of the assigned data
@@ -235,9 +229,7 @@
 
         <!-- END Column -->
         <!-- Column -->
-        <div
-          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 4 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -250,16 +242,16 @@
               :class="{ flipme: fourthCard == 1 }"
             >
               <div
-                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="popout text-6xl font-sans font-semibold">Comments</div>
+                <div class="font-sans text-6xl font-semibold popout">Comments</div>
               </div>
               <div
-                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
-                <div class="popout font-sans font-light">
+                <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <div class="mb-6 font-semibold text-2xl">
+                    <div class="mb-6 text-2xl font-semibold">
                       <h3>2 Types of Comments</h3>
                     </div>
                     <div class="flex justify-center">
@@ -267,10 +259,10 @@
                         src="../assets/js-comments.svg"
                         alt="comments code
                       snippet"
-                        class="h-48 w-auto rounded-lg"
+                        class="w-auto h-48 rounded-lg"
                       />
                     </div>
-                    <div class="mt-6 text-left w-11/12 mx-auto">
+                    <div class="w-11/12 mx-auto mt-6 text-left">
                       <ul class="list-disc">
                         <li>
                           Comments are treated like white space and they are
@@ -293,9 +285,7 @@
 
         <!-- END Column -->
         <!-- Column -->
-        <div
-          class="my-1 px-2 py-2 w-full xl:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/2 flex justify-center"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 5 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -308,36 +298,36 @@
               :class="{ flipme: fifthCard == 1 }"
             >
               <div
-                class="card__face card__face--front shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="popout text-6xl font-sans font-semibold">Operators</div>
+                <div class="font-sans text-6xl font-semibold popout">Operators</div>
               </div>
               <div
-                class="card__face card__face--back shadow-lg hover:shadow-xl rounded-lg flex items-center justify-center"
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
-                <div class="popout font-sans font-light">
+                <div class="font-sans font-light popout">
                   <h3 class="mb-4 text-xl font-semibold">Click the buttons to see the Operators</h3>
                   <div class="px-10">
-                    <div class="mb-6 font-semibold text-xl">
-                      <div class="flex flex-col w-2/4 mx-auto items-center justify-center">
+                    <div class="mb-6 text-xl font-semibold">
+                      <div class="flex flex-col items-center justify-center w-2/4 mx-auto">
                         <button
-                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
                           @click.stop="showArrith = true"
                         >Arithmetic</button>
                         <button
-                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
                           @click.stop="showAssign = true"
                         >Assignment</button>
                         <button
-                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
                           @click.stop="showCompar = true"
                         >Comparison</button>
                         <button
-                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded mb-4"
+                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
                           @click.stop="showLogical = true"
                         >Logical</button>
                         <button
-                          class="shadow-lg border-solid border-2 border-basicdark hover:bg-basicdark hover:text-basiclight w-full uppercase font-semibold px-2 py-1 rounded"
+                          class="w-full px-2 py-1 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
                           @click.stop="showType = true"
                         >type</button>
                       </div>
@@ -363,41 +353,71 @@
       </div>
     </div>
     <!-- <div @mouseover="modalPlease" @mouseleave="modalPlease"></div> -->
-    <app-modal v-if="showArrith" @close="(showArrith = false), (hover = false)">
+    <app-modal
+      v-if="showArrith"
+      @close="showArrith = false"
+      backgroundColor="bg-basiclight"
+      textColor="text-basicdark"
+      buttonColor="bg-basiclight hover:text-basiclight hover:bg-basicdark border-basicdark"
+    >
       <template v-slot:header>
-        <h3 class="uppercase text-xl">Arithmetic Operators</h3>
+        <h3 class="text-xl uppercase">Arithmetic Operators</h3>
       </template>
       <template v-slot:body>
         <arith-operators></arith-operators>
       </template>
     </app-modal>
-    <app-modal v-if="showAssign" @close="showAssign = false">
+    <app-modal
+      v-if="showAssign"
+      @close="showAssign = false"
+      backgroundColor="bg-basiclight"
+      textColor="text-basicdark"
+      buttonColor="bg-basiclight hover:text-basiclight hover:bg-basicdark border-basicdark"
+    >
       <template v-slot:header>
-        <h3 class="uppercase text-xl">Assignment Operators</h3>
+        <h3 class="text-xl uppercase">Assignment Operators</h3>
       </template>
       <template v-slot:body>
         <assign-operators></assign-operators>
       </template>
     </app-modal>
-    <app-modal v-if="showCompar" @close="showCompar = false">
+    <app-modal
+      v-if="showCompar"
+      @close="showCompar = false"
+      backgroundColor="bg-basiclight"
+      textColor="text-basicdark"
+      buttonColor="bg-basiclight hover:text-basiclight hover:bg-basicdark border-basicdark"
+    >
       <template v-slot:header>
-        <h3 class="uppercase text-xl">Comparison Operators</h3>
+        <h3 class="text-xl uppercase">Comparison Operators</h3>
       </template>
       <template v-slot:body>
         <compar-operators></compar-operators>
       </template>
     </app-modal>
-    <app-modal v-if="showLogical" @close="showLogical = false">
+    <app-modal
+      v-if="showLogical"
+      @close="showLogical = false"
+      backgroundColor="bg-basiclight"
+      textColor="text-basicdark"
+      buttonColor="bg-basiclight hover:text-basiclight hover:bg-basicdark border-basicdark"
+    >
       <template v-slot:header>
-        <h3 class="uppercase text-xl">Logical Operators</h3>
+        <h3 class="text-xl uppercase">Logical Operators</h3>
       </template>
       <template v-slot:body>
         <logical-operators></logical-operators>
       </template>
     </app-modal>
-    <app-modal v-if="showType" @close="showType = false">
+    <app-modal
+      v-if="showType"
+      @close="showType = false"
+      backgroundColor="bg-basiclight"
+      textColor="text-basicdark"
+      buttonColor="bg-basiclight hover:text-basiclight hover:bg-basicdark border-basicdark"
+    >
       <template v-slot:header>
-        <h3 class="uppercase text-xl">Type Operators</h3>
+        <h3 class="text-xl uppercase">Type Operators</h3>
       </template>
       <template v-slot:body>
         <type-operators></type-operators>
@@ -408,11 +428,11 @@
 
 <script>
 import AppModal from "../components/AppModal";
-import ArithOperators from "../components/modal-contents/ArithOperators";
-import AssignOperators from "../components/modal-contents/AssignOperators";
-import ComparOperators from "../components/modal-contents/ComparOperators";
-import LogicalOperators from "../components/modal-contents/LogicalOperators";
-import TypeOperators from "../components/modal-contents/TypeOperators";
+import ArithOperators from "../components/modal-contents/basics/ArithOperators";
+import AssignOperators from "../components/modal-contents/basics/AssignOperators";
+import ComparOperators from "../components/modal-contents/basics/ComparOperators";
+import LogicalOperators from "../components/modal-contents/basics/LogicalOperators";
+import TypeOperators from "../components/modal-contents/basics/TypeOperators";
 export default {
   components: {
     AppModal,
@@ -429,7 +449,6 @@ export default {
       thirdCard: undefined,
       fourthCard: undefined,
       fifthCard: undefined,
-      showModal: false,
       showArrith: false,
       showAssign: false,
       showCompar: false,
