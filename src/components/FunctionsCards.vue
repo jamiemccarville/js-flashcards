@@ -92,10 +92,17 @@
                         <li>Values can be passed into functions and used within</li>
                         <li>
                           Functions will
-                          <strong>always</strong> return a value. In JS, if there is no specific return value specified "undefined" will be returned
+                          <strong>always</strong> return a value. In JS, if there is no specific return value specified, "undefined" will be returned
                         </li>
                         <li>Functions are objects</li>
                       </ul>
+                    </div>
+                    <div class="w-3/4 h-auto mx-auto mt-4">
+                      <img
+                        src="../assets/function-parts.png"
+                        alt="parts of a function"
+                        class="rounded-lg"
+                      />
                     </div>
                   </div>
                 </div>
