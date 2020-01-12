@@ -2,7 +2,7 @@
   <div>
     <ol class="text-left list-disc">
       <li>Shorter syntax alternative to regular function expression</li>
-      <li>Can't be defined on its own, must be stored in a variable or in place of another anynymous function expression</li>
+      <li>Can't be defined on its own, must be stored in a variable or used in place of another anynymous function expression</li>
       <li>
         doesn't create it own
         <span class="font-mono">this</span> value

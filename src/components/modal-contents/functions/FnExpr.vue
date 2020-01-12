@@ -7,7 +7,7 @@
     </ol>
     <div class="w-3/4 h-auto mx-auto mt-5 lg:w-2/4">
       <img
-        src="../../../assets/fn-expression.png"
+        src="../../../assets/function-expression.png"
         alt="function declaration example"
         class="rounded-lg"
       />

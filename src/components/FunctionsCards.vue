@@ -92,7 +92,9 @@
                         <li>Values can be passed into functions and used within</li>
                         <li>
                           Functions will
-                          <strong>always</strong> return a value. In JS, if there is no specific return value specified, "undefined" will be returned
+                          <strong>
+                            <strong>always</strong>
+                          </strong> return a value. In JS, if there is no specific return value specified, "undefined" will be returned
                         </li>
                         <li>Functions are objects</li>
                       </ul>
@@ -182,36 +184,27 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Comments</div>
+                <div class="font-sans text-6xl font-semibold popout">Calling a Function</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <div class="mb-6 text-2xl font-semibold">
-                      <h3>2 Types of Comments</h3>
+                    <div class="w-11/12 mx-auto text-left">
+                      <ul class="list-disc">
+                        <li>When a function is defined, it doesn't automatically run. It has to be called(invoked)</li>
+                        <li>You call a function by typing its name followed by parenthesis</li>
+                        <li>The code inside the function body (between the curly brackets) will run (execute)</li>
+                      </ul>
                     </div>
-                    <div class="flex justify-center">
+                    <div class="w-3/4 h-auto mx-auto mt-3">
                       <img
-                        src="../assets/js-comments.svg"
+                        src="../assets/function-call.png"
                         alt="comments code
                       snippet"
-                        class="w-auto h-48 rounded-lg"
+                        class="rounded-lg"
                       />
-                    </div>
-                    <div class="w-11/12 mx-auto mt-6 text-left">
-                      <ul class="list-disc">
-                        <li>
-                          Comments are treated like white space and they are
-                          discarded when the script is executed
-                        </li>
-                        <li>
-                          They can be used to leave notes or descriptions of
-                          code and also to prevent a selection of code from
-                          running
-                        </li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -220,8 +213,220 @@
           </div>
           <!-- Card 4 Ends  -->
         </div>
+        <!-- END Column -->
+        <!-- Column -->
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+          <!-- Card 5 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                fifthCard == undefined
+                  ? (fifthCard = 1)
+                  : (fifthCard = undefined)
+              "
+              :class="{ flipme: fifthCard == 1 }"
+            >
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
+              >
+                <div class="font-sans text-6xl font-semibold popout">Parameters</div>
+              </div>
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
+              >
+                <div class="font-sans font-light popout">
+                  <div class="px-10">
+                    <div class="w-11/12 mx-auto text-left">
+                      <ul class="list-disc">
+                        <li>inputs that a function can accept and then perform tasks with</li>
+                        <li>they are placeholders for information that will be passed in when the function is called</li>
+                        <li>parameters names are created when defining a function</li>
+                        <li>multiple parameters must be separated by a comma</li>
+                      </ul>
+                    </div>
+                    <div class="w-3/4 h-auto mx-auto mt-2">
+                      <img
+                        src="../assets/parameter-example.png"
+                        alt="comments code
+                      snippet"
+                        class="rounded-lg"
+                      />
+                    </div>
+                    <div class="w-3/4 h-auto mx-auto mt-2">
+                      <img
+                        src="../assets/parameter-example2.png"
+                        alt="comments code
+                      snippet"
+                        class="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 Ends  -->
+        </div>
+        <!-- END Column -->
+        <!-- Column -->
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+          <!-- Card 6 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                sixthCard == undefined
+                  ? (sixthCard = 1)
+                  : (sixthCard = undefined)
+              "
+              :class="{ flipme: sixthCard == 1 }"
+            >
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
+              >
+                <div class="font-sans text-6xl font-semibold popout">Arguments</div>
+              </div>
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
+              >
+                <div class="font-sans font-light popout">
+                  <div class="px-10">
+                    <div class="w-11/12 mx-auto text-left">
+                      <ul class="list-disc">
+                        <li>Values that are passed to the function when it is called</li>
+                        <li>can be passed to the funciton as values or as variables</li>
+                      </ul>
+                    </div>
+                    <div class="w-11/12 h-auto mx-auto mt-3">
+                      <img
+                        src="../assets/argument-example.png"
+                        alt="comments code
+                      snippet"
+                        class="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 Ends  -->
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+          <!-- Card 7 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                seventhCard == undefined
+                  ? (seventhCard = 1)
+                  : (seventhCard = undefined)
+              "
+              :class="{ flipme: seventhCard == 1 }"
+            >
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
+              >
+                <div class="font-sans text-6xl font-semibold popout">Return Statement</div>
+              </div>
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
+              >
+                <div class="font-sans font-light popout">
+                  <div class="px-10">
+                    <div class="w-11/12 mx-auto text-left">
+                      <ul class="list-disc">
+                        <li>Functions always return a value.</li>
+                        <li>
+                          If there is no
+                          <span class="font-mono">return</span> value specified, "undefined" will be returned.
+                        </li>
+                        <li>
+                          when a
+                          <span class="font-mono">return</span>
+                          statement is used, the execution of the function is stopped. Any code after the
+                          <span
+                            class="font-mono"
+                          >return</span> statement will not be executed
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="w-11/12 h-auto mx-auto mt-1">
+                      <img
+                        src="../assets/return-statement.png"
+                        alt="comments code
+                      snippet"
+                        class="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 7 Ends  -->
+        </div>
+        <!-- END Column -->
+
+        <!-- Column -->
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+          <!-- Card 8 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                eighthCard == undefined
+                  ? (eighthCard = 1)
+                  : (eighthCard = undefined)
+              "
+              :class="{ flipme: eighthCard == 1 }"
+            >
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
+              >
+                <div
+                  class="w-10/12 font-sans text-6xl font-semibold popout"
+                >Immediately Invoked Function Expression</div>
+              </div>
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
+              >
+                <div class="font-sans font-light popout">
+                  <h3 class="px-10 text-xl font-semibold">
+                    Immediately Invoked Function Expression
+                    <br />( IIFE )
+                  </h3>
+                  <div class="px-10 mt-1">
+                    <div class="w-11/12 mx-auto text-left">
+                      <ul class="list-disc">
+                        <li>A function that is called immediately after it is defined</li>
+                        <li>The function expression is wrapped in brackets</li>
+                        <li>The function is called by a pair of brackets added to the end of the function</li>
+                        <li>Will typically be anonymous as it is only run once</li>
+                        <li>will not be added to the global object</li>
+                      </ul>
+                    </div>
+                    <div class="w-3/4 h-auto mx-auto mt-2">
+                      <img
+                        src="../assets/iife-example.png"
+                        alt="comments code
+                      snippet"
+                        class="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 8 Ends  -->
+        </div>
+        <!-- END Column -->
       </div>
-      <!-- END Column -->
     </div>
     <app-modal
       v-if="showFnDeclaration"
@@ -287,6 +492,9 @@ export default {
       thirdCard: undefined,
       fourthCard: undefined,
       fifthCard: undefined,
+      sixthCard: undefined,
+      seventhCard: undefined,
+      eighthCard: undefined,
       showModal: false,
       showFnDeclaration: false,
       showFnExpression: false,
