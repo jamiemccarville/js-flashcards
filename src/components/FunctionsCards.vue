@@ -548,12 +548,4 @@ export default {
 .popout {
   transform: translateZ(100px);
 }
-
-.zoom {
-  transition: transform 0.4s;
-}
-
-.zoom:hover {
-  transform: scale(1.03);
-}
 </style>

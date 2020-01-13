@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12">
+  <div class="py-12 font-sans">
     <div class="mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
       <div class="flex flex-wrap justify-center">
         <!--  -->
@@ -20,12 +20,12 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">What is JS?</div>
+                <div class="text-6xl font-semibold popout">What is JS?</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
-                <div class="font-sans font-light popout">
+                <div class="font-light popout">
                   <div class="px-10">
                     <div class="text-left">
                       <p>
@@ -503,13 +503,5 @@ export default {
 
 .popout {
   transform: translateZ(100px);
-}
-
-.zoom {
-  transition: transform 0.4s;
-}
-
-.zoom:hover {
-  transform: scale(1.03);
 }
 </style>

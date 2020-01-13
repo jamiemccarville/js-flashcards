@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen page-background">
+  <div class="min-h-screen bg-basicred">
     <basics-cards></basics-cards>
   </div>
 </template>
@@ -17,6 +17,6 @@ export default {
 </script>
 <style scoped>
 .page-background {
-  background-color: hsl(355.2, 84.3%, 62.5%);
+  /* background-color: hsl(355.2, 84.3%, 62.5%); */
 }
 </style>

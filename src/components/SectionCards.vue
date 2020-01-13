@@ -4,7 +4,7 @@
       <!--  -->
 
       <!-- Column -->
-      <div class="w-full px-2 py-2 my-1 lg:py-0 md:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
+      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
         <!-- Article -->
         <router-link to="/basics">
           <article
@@ -18,7 +18,7 @@
               />
             </div>
 
-            <div class="px-6 py-4 font-normal bg-gray-300 border-t border-gray-700 border-solid">
+            <div class="px-6 py-4 font-normal bg-gray-200 border-t border-gray-700 border-solid">
               <div class="w-6/12 mx-auto">
                 <div class="flex justify-center">
                   <ul
@@ -40,7 +40,7 @@
       <!-- END Column -->
 
       <!-- Column -->
-      <div class="w-full px-2 py-2 my-1 lg:py-0 md:w-1/2 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
+      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
         <!-- Article -->
         <router-link to="/functions">
           <article
@@ -54,7 +54,7 @@
               />
             </div>
 
-            <div class="px-6 py-4 font-normal bg-gray-300 border-t border-gray-700 border-solid">
+            <div class="px-6 py-4 font-normal bg-gray-200 border-t border-gray-700 border-solid">
               <div class="w-11/12 mx-auto">
                 <div class="flex justify-center">
                   <ul
@@ -85,11 +85,4 @@
 export default {};
 </script>
 <style scoped>
-.zoom {
-  transition: transform 0.4s;
-}
-
-.zoom:hover {
-  transform: scale(1.03);
-}
 </style>
