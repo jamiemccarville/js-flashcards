@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 py-32 mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
+  <div class="px-4 py-12 mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
     <div class="flex flex-wrap -mx-1 lg:-mx-4">
       <!--  -->
 

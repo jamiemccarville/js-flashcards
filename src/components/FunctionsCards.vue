@@ -1,5 +1,5 @@
 <template>
-  <div class="py-40">
+  <div class="py-12">
     <div class="mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
       <div class="flex flex-wrap justify-center">
         <!--  -->
@@ -241,7 +241,7 @@
                       <ul class="list-disc">
                         <li>inputs that a function can accept and then perform tasks with</li>
                         <li>they are placeholders for information that will be passed in when the function is called</li>
-                        <li>parameters names are created when defining a function</li>
+                        <li>parameter names are created when defining a function</li>
                         <li>multiple parameters must be separated by a comma</li>
                       </ul>
                     </div>

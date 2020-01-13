@@ -34,7 +34,8 @@ module.exports = {
         "108": "27rem"
       },
       fontFamily: {
-        cardface: ["Josefin Sans", "Sans-serif"]
+        cardface: ["Josefin Sans", "Sans-serif"],
+        raleway: ["Raleway", "Sans-serif"]
       },
       cursor: {
         alias: "alias"
@@ -45,7 +46,8 @@ module.exports = {
         basiclight: "hsl(355.2, 84.3%, 95%)",
         fnorange: "hsl(22.2, 84.3%, 62.5%)",
         fndark: "hsl(22.2, 84.3%, 20%)",
-        fnlight: "hsl(22.2, 84.3%, 95%)"
+        fnlight: "hsl(22.2, 84.3%, 95%)",
+        minion: "#f0db4f"
       }
     }
   },

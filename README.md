@@ -1,4 +1,4 @@
-# 003-js-review
+# JS Flashcards
 
 ## Project setup
 ```
