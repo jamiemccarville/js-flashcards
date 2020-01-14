@@ -11,8 +11,19 @@
       <router-link class="px-4 hover:text-fnorange functions" to="/functions">Functions</router-link>
     </div>
     <router-view id="router-view" />
+    <app-footer></app-footer>
   </div>
 </template>
+
+<script>
+import AppFooter from "../src/components/AppFooter";
+
+export default {
+  components: {
+    AppFooter
+  }
+};
+</script>
 
 <style >
 #app {
@@ -37,17 +48,4 @@
   text-decoration: underline;
   text-decoration-color: #f0db4f;
 }
-/* #nav {
-  padding: 30px;
-  background-color: #f5f5f5;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>

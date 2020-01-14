@@ -5,9 +5,7 @@
 </template>
 
 <script>
-//import AppCard from "../components/AppCard";
 import BasicsCards from "../components/BasicsCards";
-//import HoverCard from "../components/HoverCard";
 
 export default {
   components: {

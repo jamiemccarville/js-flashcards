@@ -36,7 +36,8 @@ module.exports = {
       fontFamily: {
         cardface: ["Josefin Sans", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],
-         opensans: ["Open Sans", "sans-serif"]
+        opensans: ["Open Sans", "sans-serif"],
+        lifesavers: ["Life Savers", "cursive"] 
        
       },
       cursor: {
@@ -50,7 +51,10 @@ module.exports = {
         fndark: "hsl(22.2, 84.3%, 20%)",
         fnlight: "hsl(22.2, 84.3%, 95%)",
         minion: "#f0db4f",
-        darkcharcoal: "#323330"
+        darkcharcoal: "#323330",
+        appgreen: "hsl(112.2, 84.3%, 62.5%)",
+        appblue: "hsl(202.2, 84.3%, 62.5%)",
+        darkcyan: "#0F8B8D"
       }
     }
   },

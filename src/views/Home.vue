@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen home">
+  <div class="home">
     <section-cards></section-cards>
   </div>
 </template>
