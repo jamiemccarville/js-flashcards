@@ -4,15 +4,15 @@
       <!--  -->
 
       <!-- Column -->
-      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
+      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4 lg:w-1/3">
         <!-- Article -->
         <router-link to="/basics">
           <article
             class="overflow-hidden border border-gray-700 border-solid rounded-lg shadow-lg hover:shadow-xl zoom"
           >
-            <div class="relative bg-turquoise-500 pb-2/3">
+            <div class="relative bg-turquoise-500 pb-7/12">
               <img
-                alt=" Placeholder"
+                alt="basics card top"
                 class="absolute object-cover w-full h-full"
                 src="../assets/basics-card-topper.png"
               />
@@ -40,13 +40,13 @@
       <!-- END Column -->
 
       <!-- Column -->
-      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4">
+      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4 lg:w-1/3">
         <!-- Article -->
         <router-link to="/functions">
           <article
             class="overflow-hidden border border-gray-700 border-solid rounded-lg shadow-lg hover:shadow-xl zoom"
           >
-            <div class="relative bg-turquoise-500 pb-2/3">
+            <div class="relative bg-turquoise-500 pb-7/12">
               <img
                 alt=" Placeholder"
                 class="absolute object-cover w-full h-full"
