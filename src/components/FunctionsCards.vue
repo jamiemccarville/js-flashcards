@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12">
+  <div class="py-12 text-sm sm:">
     <div class="mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
       <div class="flex flex-wrap justify-center">
         <!--  -->
@@ -20,7 +20,9 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">What are Functions?</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >What are Functions?</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -69,9 +71,10 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">
+                <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
                   Functions:
-                  <br />Quick Overview
+                  <br />Quick
+                  <br />Overview
                 </div>
               </div>
               <div
@@ -132,18 +135,20 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Defining a Function</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Defining a Function</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
                   <h3
-                    class="px-10 pt-5 mb-4 mb-8 text-xl font-semibold"
+                    class="px-10 pt-5 mb-4 mb-8 text-lg font-semibold sm:text-xl"
                   >Click the buttons to see the different ways to define a function</h3>
                   <div class="px-10">
                     <div class="mb-6 text-xl font-semibold">
-                      <div class="flex flex-col items-center justify-center w-2/4 mx-auto">
+                      <div class="flex flex-col items-center justify-center w-3/4 mx-auto sm:w-2/4">
                         <button
                           class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
                           @click.stop="showFnDeclaration = true"
@@ -184,7 +189,9 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Calling a Function</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Calling a Function</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -230,7 +237,9 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Parameters</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Parameters</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -285,7 +294,9 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Arguments</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Arguments</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -331,7 +342,10 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Return Statement</div>
+                <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
+                  Return
+                  <br />Statement
+                </div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -389,14 +403,14 @@
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
                 <div
-                  class="w-10/12 font-sans text-6xl font-semibold popout"
+                  class="w-10/12 font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
                 >Immediately Invoked Function Expression</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
-                  <h3 class="px-10 text-xl font-semibold">
+                  <h3 class="px-10 text-lg font-semibold sm:text-xl">
                     Immediately Invoked Function Expression
                     <br />( IIFE )
                   </h3>

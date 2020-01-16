@@ -2,7 +2,7 @@
   <transition name="modal ">
     <div class="font-sans modal-mask" :class="textColor">
       <div class="modal-wrapper">
-        <div class="rounded-lg modal-container" :class="backgroundColor">
+        <div class="w-11/12 rounded-lg modal-container sm:w-7/12 lg:w-2/4" :class="backgroundColor">
           <div class="modal-header">
             <slot name="header">default header</slot>
           </div>
@@ -65,7 +65,6 @@ export default {
 }
 
 .modal-container {
-  width: 60%;
   margin: 0px auto;
   padding: 20px 30px;
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 font-sans">
+  <div class="py-12 font-sans text-sm sm:text-base">
     <div class="mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
       <div class="flex flex-wrap justify-center">
         <!--  -->
@@ -20,7 +20,7 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="text-6xl font-semibold popout">What is JS?</div>
+                <div class="text-5xl font-semibold sm:text-6xl popout font-cardface">What is JS?</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -95,14 +95,18 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Data Types</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Data Types</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <h3 class="mb-2 font-sans text-3xl font-normal uppercase">8 Data Types</h3>
+                    <h3
+                      class="mb-2 font-sans text-xl font-normal uppercase sm:text-3xl"
+                    >8 Data Types</h3>
                     <div class="text-left">
                       <ul>
                         <li class="font-normal underline">7 Primitive</li>
@@ -168,7 +172,9 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Variables</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Variables</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -198,7 +204,7 @@
                         assignment operator "=". The value of the assigned data
                         can be any of the following
                       </p>
-                      <div class="w-6/12 mx-auto mt-2">
+                      <div class="w-3/4 mx-auto mt-2 sm:w-6/12">
                         <div class="flex justify-around w-full">
                           <div>
                             <ul class="list-disc">
@@ -244,14 +250,16 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Comments</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Comments</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
                   <div class="px-10">
-                    <div class="mb-6 text-2xl font-semibold">
+                    <div class="mb-6 text-xl font-semibold sm:text-2xl">
                       <h3>2 Types of Comments</h3>
                     </div>
                     <div class="flex justify-center">
@@ -300,16 +308,22 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div class="font-sans text-6xl font-semibold popout">Operators</div>
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Operators</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
-                  <h3 class="mb-4 text-xl font-semibold">Click the buttons to see the Operators</h3>
+                  <h3
+                    class="mb-4 text-lg font-semibold sm:text-xl"
+                  >Click the buttons to see the Operators</h3>
                   <div class="px-10">
                     <div class="mb-6 text-xl font-semibold">
-                      <div class="flex flex-col items-center justify-center w-2/4 mx-auto">
+                      <div
+                        class="flex flex-col items-center justify-center w-7/12 mx-auto sm:w-2/4"
+                      >
                         <button
                           class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight"
                           @click.stop="showArrith = true"
