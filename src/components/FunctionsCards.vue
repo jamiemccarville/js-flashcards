@@ -484,6 +484,13 @@
         <arrow-fn-expr></arrow-fn-expr>
       </template>
     </app-modal>
+    <div class="mt-10 text-center">
+      <a href="#top" class="text-xl underline uppercase text-fndark">
+        <button
+          class="px-5 py-2 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-fndark hover:text-fnlight bg-fnlight xl:hidden"
+        >Back to Top</button>
+      </a>
+    </div>
   </div>
 </template>
 

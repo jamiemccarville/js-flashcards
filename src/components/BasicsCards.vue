@@ -141,8 +141,8 @@
                           </li>
                         </ol>
                         <li>
-                          <span class="font-bold">+ Object</span> (see objects
-                          section for more details)
+                          <span class="font-bold">+ Object</span>
+                          <!-- (see objects section for more details) -->
                         </li>
                       </ul>
                     </div>
@@ -437,6 +437,13 @@
         <type-operators></type-operators>
       </template>
     </app-modal>
+    <div class="mt-10 text-center">
+      <a href="#top" class="text-xl underline uppercase text-basicdark">
+        <button
+          class="px-5 py-2 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-basicdark hover:text-basiclight bg-basiclight xl:hidden"
+        >Back to Top</button>
+      </a>
+    </div>
   </div>
 </template>
 
