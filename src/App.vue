@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div
-      class="flex items-baseline justify-end py-6 pr-4 font-sans text-xl bg-gray-100 text-darkcharcoal font-opensans nav"
+      class="z-50 flex items-baseline justify-end py-6 pr-4 font-sans text-xl bg-gray-100 text-darkcharcoal font-opensans nav"
     >
       <router-link class="px-4 mr-auto text-4xl font-raleway landing" to="/">JS Flashcards</router-link>
       <router-link
