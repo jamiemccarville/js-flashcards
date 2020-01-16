@@ -17,9 +17,15 @@ This project is copyrighted under a MIT license.  Please feel free to use any of
 1. Nav bar (used Flexbox and auto margin to move an element all the way to the left)
 2. Drop down mobile nav bar
 3. flipping cards
-   a. how to get the content on the cards and then animate
-   b. logic so that only one flips when clicked
+  a. how to get the content on the cards and then animate
+  b. logic so that only one flips when clicked
 4. Footer - style svg buttons on hover
 5. Modals - show and hide on click
 6. buttons - click buttons on flipping card without the card flipping (used @click.stop to stop propogation)
 7. Style with Tailwind CSS.  Extend theme in tailwind.config.js
+
+## Get in touch
+
+If you head to my site https://mccarville.dev you can find all the info you need to get in touch.
+
+Thanks for checking out my project!
