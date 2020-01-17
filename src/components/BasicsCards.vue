@@ -264,7 +264,7 @@
                     </div>
                     <div class="flex justify-center">
                       <img
-                        src="../assets/js-comments.svg"
+                        src="../assets/comments.png"
                         alt="comments code
                       snippet"
                         class="w-auto h-48 rounded-lg"
