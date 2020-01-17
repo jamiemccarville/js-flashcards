@@ -1,5 +1,5 @@
 <template>
-  <div class="py-12 text-sm sm:">
+  <div class="py-12 text-sm sm:text-base">
     <div class="mx-auto w-7/8 sm:w-10/12 md:w-11/12 md:px-12">
       <div class="flex flex-wrap justify-center">
         <!--  -->
