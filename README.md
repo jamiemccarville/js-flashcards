@@ -2,13 +2,13 @@
 
 Jan 16, 2020 - The app is currently a work in progress. I have been working on it consistently the last few weeks, but I am planning to step back a bit as I make some time to work on other projects. I plan to continue to add content on a weekly basis and add more sections.
 
-## Why I built the Site
+## Why I built the site
 
-I built the App for 2 reasons.
+I built the site for 2 reasons.
 
 1. The first reason was to create a Vue project that I thought up on my own.  This has allowed me to practice both my Vue and general front end skills.  
 
-2. The second reason was was to create JS flashcards to help other people learn while also solidifying my own learning. The process of trying to figure out what and how much content to put on the cards has been a great exercise, strengthening my own understanding. It's definitely true that one of the best ways to make sure that you understand something is to try and teach it to someone else.
+2. The second reason was was to create flashcards to help other people learn JS while also solidifying my own learning. The process of trying to figure out what and how much content to put on the cards has been a great exercise, strengthening my own understanding. It's definitely true that one of the best ways to make sure that you understand something is to try and teach it to someone else.
 
 ## Make it your own
 
