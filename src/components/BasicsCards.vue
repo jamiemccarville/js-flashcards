@@ -224,7 +224,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="text-left"></div>
                   </div>
                 </div>
               </div>
@@ -364,6 +363,64 @@
         </div>
 
         <!-- END Column -->
+
+        <!-- Column -->
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+          <!-- Card 6 Starts -->
+          <div class="scene scene--card zoom">
+            <div
+              class="card"
+              @click="
+                sixthCard == undefined
+                  ? (sixthCard = 1)
+                  : (sixthCard = undefined)
+              "
+              :class="{ flipme: sixthCard == 1 }"
+            >
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
+              >
+                <div
+                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
+                >Strict Mode</div>
+              </div>
+              <div
+                class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
+              >
+                <div class="font-sans font-light popout">
+                  <div class="px-10 text-left">
+                    <p class="font-semibold">What is Strict Mode?</p>
+                    <p
+                      class="mb-3"
+                    >Strict mode allows you to place a program or function in a 'strict' operating context</p>
+                    <p class="font-semibold">Declaring Strict Mode</p>
+                    <p
+                      class="mb-3"
+                    >Add the "use strict" directive at the top of a script or a function</p>
+                    <p class="mb-1 font-semibold">Changes/Benefits of Strict Mode</p>
+                    <ol class="list-decimal list-inside">
+                      <li>Eliminates some JavaScript silent errors by changing them to throw errors</li>
+                      <li>Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode</li>
+                      <li>Prohibits some syntax likely to be defined in future versions of ECMAScript</li>
+                    </ol>
+                    <p class="ml-4 italic">
+                      - excerpt from MDN docs. Click
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"
+                        target="blank"
+                        class="underline cursor-alias hover:text-basicred"
+                      >here</a>
+                      to read more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 Ends  -->
+        </div>
+
+        <!-- END Column -->
       </div>
     </div>
     <!-- <div @mouseover="modalPlease" @mouseleave="modalPlease"></div> -->
@@ -470,6 +527,7 @@ export default {
       thirdCard: undefined,
       fourthCard: undefined,
       fifthCard: undefined,
+      sixthCard: undefined,
       showArrith: false,
       showAssign: false,
       showCompar: false,
