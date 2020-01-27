@@ -20,9 +20,10 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div
-                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
-                >What are Functions?</div>
+                <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
+                  Block
+                  <br />Statement
+                </div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"

@@ -1,15 +1,15 @@
 <template>
   <div class="min-h-screen bg-minion">
-    <flow-control-cards></flow-control-cards>
+    <control-flow-cards></control-flow-cards>
   </div>
 </template>
 
 <script>
-import FlowControlCards from "../components/FlowControlCards";
+import ControlFlowCards from "../components/ControlFlowCards";
 
 export default {
   components: {
-    FlowControlCards
+    ControlFlowCards
   }
 };
 </script>
