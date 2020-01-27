@@ -54,7 +54,9 @@ module.exports = {
         darkcharcoal: "#323330",
         appgreen: "hsl(112.2, 84.3%, 62.5%)",
         appblue: "hsl(202.2, 84.3%, 62.5%)",
-        darkcyan: "#0F8B8D"
+        darkcyan: "#0F8B8D",
+        flowlight: "hsl(52.2, 84.3%, 95%)",
+        flowdark: "hsl(52.2, 84.3%, 15%)"
       }
     }
   },

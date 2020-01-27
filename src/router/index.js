@@ -30,6 +30,15 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Functions.vue")
   },
   {
+    path: "/flow-control",
+    name: "flow-control",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/FlowControl.vue")
+  },
+  {
     path: "*", component: () =>
       import( /* webpackChunkName: "about" */ "../components/404.vue")
   }
