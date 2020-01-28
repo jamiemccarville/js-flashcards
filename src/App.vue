@@ -9,9 +9,10 @@
         to="/basics"
       >Basics</router-link>
       <router-link
-        class="hidden px-4 lg:block hover:text-fnorange functions"
+        class="hidden px-4 border-r border-solid border-darkcharcoal lg:block hover:text-fnorange"
         to="/functions"
       >Functions</router-link>
+      <router-link class="hidden px-4 lg:block hover:text-minion" to="/control-flow">Control Flow</router-link>
       <div class="lg:hidden">
         <button
           @click="isOpen = !isOpen"
@@ -45,9 +46,16 @@
         <li class="w-full pb-5 text-center border-b-2 border-gray-400">
           <router-link
             to="/functions"
-            class="text-lg about hover:text-fnorange functions"
+            class="text-lg about hover:text-fnorange"
             @click.native="isOpen = !isOpen"
           >Functions</router-link>
+        </li>
+        <li class="w-full pt-5 pb-5 text-center border-b-2 border-gray-400">
+          <router-link
+            to="/control-flow"
+            class="text-lg about hover:text-minion"
+            @click.native="isOpen = !isOpen"
+          >Control Flow</router-link>
         </li>
       </ul>
     </div>

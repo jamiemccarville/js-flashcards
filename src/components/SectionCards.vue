@@ -79,10 +79,8 @@
       <!-- END Column -->
 
       <!-- Column -->
-      <div
-        class="hidden w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4 lg:w-1/3"
-      >
-        <!-- Functions -->
+      <div class="w-full px-2 py-2 my-1 sm:w-1/2 lg:py-0 lg:my-4 lg:px-4 xl:px-2 xl:w-1/4 lg:w-1/3">
+        <!-- Control Flow -->
         <router-link to="/control-flow">
           <article
             class="overflow-hidden border border-gray-700 border-solid rounded-lg shadow-lg hover:shadow-xl zoom"
@@ -91,7 +89,7 @@
               <img
                 alt=" Placeholder"
                 class="absolute object-cover w-full h-full"
-                src="../assets/flow-control-topper.png"
+                src="../assets/control-flow-topper.png"
               />
             </div>
 
@@ -101,21 +99,21 @@
                   <ul
                     class="ml-2 text-base font-semibold text-left text-gray-700 list-disc font-opensans text-l"
                   >
-                    <li>What are functions?</li>
-                    <li>Quick Overview</li>
-                    <li>Defining a function</li>
-                    <li>Calling a function</li>
-                    <li>Parameters</li>
-                    <li>Arguments</li>
-                    <li>Return Statement</li>
-                    <li>IIFE</li>
+                    <li>Block Statement</li>
+                    <li>"if" Statement</li>
+                    <li>Truthy and Falsey</li>
+                    <li>"if"..."else"</li>
+                    <li>"if"..."else if"..."else"</li>
+                    <li>Ternary Operator</li>
+                    <li>Switch Statement</li>
+                    <li>Break Statement</li>
                   </ul>
                 </div>
               </div>
             </div>
           </article>
         </router-link>
-        <!-- END Functions -->
+        <!-- END Control Flow -->
       </div>
       <!-- END Column -->
     </div>

@@ -31,21 +31,29 @@
                 <div class="font-sans font-light popout">
                   <div class="px-10">
                     <div class="text-left">
-                      <p>
-                        "Generally speaking, a function is a "subprogram" that can be called by code external (or internal in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the function body. Values can be passed to a function, and the function will return a value.
-                        <br />In JavaScript, functions are first-class objects, because they can have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called. In brief, they are Function objects."
-                      </p>
-
-                      <p class="ml-4 italic">
-                        - excerpt from MDN docs. Click
-                        <a
-                          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions"
-                          target="blank"
-                          class="underline cursor-alias hover:text-fnorange"
-                        >here</a>
-                        to read more
-                      </p>
-                      <br />
+                      <p class="font-bold">Block Statement</p>
+                      <ul class="list-disc list-inside">
+                        <li>The most basic statement</li>
+                        <li>The block is bound by a pair of curly brackets</li>
+                        <li>
+                          commonly used with control flow statements
+                          <span
+                            class="font-mono font"
+                          >(if, for, while)</span>
+                        </li>
+                      </ul>
+                      <div class="flex justify-around mt-8">
+                        <img
+                          src="../assets/block-statement-ex1.png"
+                          alt="block statement example"
+                          class="w-6/12 mr-2 sm:w-5/12"
+                        />
+                        <img
+                          src="../assets/block-statement-ex2.png"
+                          alt="block statement example 2"
+                          class="w-6/12 ml-2 sm:w-5/12"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -73,9 +81,8 @@
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
                 <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
-                  Functions:
-                  <br />Quick
-                  <br />Overview
+                  "if"
+                  <br />Statement
                 </div>
               </div>
               <div
@@ -84,31 +91,30 @@
                 <div class="font-sans font-light popout">
                   <div class="px-10">
                     <div class="text-left">
+                      <p class="font-bold">
+                        The
+                        <span class="font-mono">if(...)</span> Statement
+                      </p>
                       <ul class="list-disc list-inside">
-                        <li>
-                          A function is a
-                          <i>subprogram</i> created to perform a certain task
-                        </li>
-                        <li>
-                          To execute a function it has to be called. This is referred to as
-                          <i>invoking</i> a function
-                        </li>
-                        <li>Values can be passed into functions and used within</li>
-                        <li>
-                          Functions will
-                          <strong>
-                            <strong>always</strong>
-                          </strong> return a value. In JS, if there is no specific return value specified, "undefined" will be returned
-                        </li>
-                        <li>Functions are objects</li>
+                        <li>Evaluates a condition in parenthesis</li>
+                        <li>if the condition evaluates to true, executes block of code</li>
                       </ul>
-                    </div>
-                    <div class="w-3/4 h-auto mx-auto mt-4">
-                      <img
-                        src="../assets/function-parts.png"
-                        alt="parts of a function"
-                        class="rounded-lg"
-                      />
+                      <div class="mx-auto mt-3">
+                        <img
+                          src="../assets/if-statement.png"
+                          alt="if statement example"
+                          class="mx-auto"
+                        />
+                      </div>
+                      <p
+                        class="mt-3"
+                      >This code will display the alert 'meow!' because the condition (myPet == "cat") evaluates to true</p>
+                      <div class="flex">
+                        <button
+                          class="px-2 py-1 mx-auto mt-3 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                          @click.stop="showIfStatement = true"
+                        >Try it!</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -121,7 +127,9 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+        <div
+          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
+        >
           <!-- Card 3 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -175,7 +183,9 @@
 
         <!-- END Column -->
         <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+        <div
+          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
+        >
           <!-- Card 4 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -223,7 +233,9 @@
         </div>
         <!-- END Column -->
         <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+        <div
+          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
+        >
           <!-- Card 5 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -280,7 +292,9 @@
         </div>
         <!-- END Column -->
         <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+        <div
+          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
+        >
           <!-- Card 6 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -328,7 +342,9 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+        <div
+          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
+        >
           <!-- Card 7 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -388,7 +404,9 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
+        <div
+          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
+        >
           <!-- Card 8 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -444,17 +462,17 @@
       </div>
     </div>
     <app-modal
-      v-if="showFnDeclaration"
-      @close="showFnDeclaration = false"
-      backgroundColor="bg-fnlight"
-      textColor="text-fndark"
-      buttonColor="bg-fnlight hover:text-fnlight hover:bg-fndark border-fndark"
+      v-if="showIfStatement"
+      @close="showIfStatement = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
     >
       <template v-slot:header>
-        <h3 class="text-xl uppercase">Function Declaration</h3>
+        <h3 class="text-xl">"if" Statement in Action</h3>
       </template>
       <template v-slot:body>
-        <fn-decl></fn-decl>
+        <if-statement></if-statement>
       </template>
     </app-modal>
     <app-modal
@@ -488,7 +506,7 @@
     <div class="mt-10 text-center">
       <a href="#top" class="text-xl underline uppercase text-fndark">
         <button
-          class="px-5 py-2 font-semibold uppercase border-2 border-solid rounded shadow-lg border-basicdark hover:bg-fndark hover:text-fnlight bg-fnlight xl:hidden"
+          class="px-5 py-2 font-semibold uppercase border-2 border-solid rounded shadow-lg border-flowdark hover:bg-flowdark hover:text-flowlight bg-flowlight xl:hidden"
         >Back to Top</button>
       </a>
     </div>
@@ -497,13 +515,13 @@
 
 <script>
 import AppModal from "../components/AppModal";
-import FnDecl from "../components/modal-contents/functions/FnDecl";
+import ifStatement from "../components/modal-contents/control-flow/ifStatement";
 import FnExpr from "../components/modal-contents/functions/FnExpr";
 import ArrowFnExpr from "../components/modal-contents/functions/ArrowFnExpr";
 export default {
   components: {
     AppModal,
-    FnDecl,
+    ifStatement,
     FnExpr,
     ArrowFnExpr
   },
@@ -518,9 +536,10 @@ export default {
       seventhCard: undefined,
       eighthCard: undefined,
       showModal: false,
-      showFnDeclaration: false,
+      showIfStatement: false,
       showFnExpression: false,
-      showArrowFnExpression: false
+      showArrowFnExpression: false,
+      message: "enter type of pet"
     };
   }
 };

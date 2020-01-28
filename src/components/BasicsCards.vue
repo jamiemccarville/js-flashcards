@@ -187,7 +187,8 @@
                       <ul class="ml-4">
                         <li>
                           <span class="mr-2 font-bold">var:</span>declares a
-                          variable
+                          variable (
+                          <strong>DON'T</strong> use this method)
                         </li>
                         <li>
                           <span class="mr-2 font-bold">let:</span>declares a
