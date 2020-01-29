@@ -101,7 +101,7 @@
                   >
                     <li>Block Statement</li>
                     <li>"if" Statement</li>
-                    <li>Truthy and Falsey</li>
+                    <li>Truthy & Falsy</li>
                     <li>"if"..."else"</li>
                     <li>"if"..."else if"..."else"</li>
                     <li>Ternary Operator</li>

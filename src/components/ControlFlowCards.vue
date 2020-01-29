@@ -127,9 +127,7 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div
-          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 3 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -144,33 +142,45 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div
-                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
-                >Defining a Function</div>
+                <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
+                  Truthy &
+                  <br />Falsy
+                </div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
-                  <h3
-                    class="px-10 pt-5 mb-4 mb-8 text-lg font-semibold sm:text-xl"
-                  >Click the buttons to see the different ways to define a function</h3>
-                  <div class="px-10">
-                    <div class="mb-6 text-xl font-semibold">
-                      <div class="flex flex-col items-center justify-center w-3/4 mx-auto sm:w-2/4">
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
-                          @click.stop="showFnDeclaration = true"
-                        >Function Declaration</button>
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
-                          @click.stop="showFnExpression = true"
-                        >Function Expression</button>
-                        <button
-                          class="w-full px-2 py-1 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-fndark hover:text-fnlight"
-                          @click.stop="showArrowFnExpression = true"
-                        >Arrow Function Expression</button>
-                      </div>
+                  <h3 class="px-10 pt-5 mb-4 text-lg font-semibold sm:text-xl">Truthy and Falsy</h3>
+                  <div class="px-12 text-left">
+                    <ul class="list-disc">
+                      <li>In an "if" statement the condition in the parenthesis needs to evaluated as a boolean (true or false)</li>
+                      <li>
+                        If the value in the statement is not explicitly or doesn't evaluate to
+                        <span
+                          class="font-mono"
+                        >true</span> or
+                        <span class="font-mono">false</span> then it will need to be converted to a boolean
+                      </li>
+                      <li>
+                        JS will use type coercion to implicitly convert the value to either
+                        <span
+                          class="font-mono"
+                        >true</span> or
+                        <span class="font-mono">false</span> (happens automatically)
+                      </li>
+                      <li>
+                        There are only 7 falsy values in JS. Any value not on the list is converted to
+                        <span
+                          class="font-mono"
+                        >true</span>
+                      </li>
+                    </ul>
+                    <div class="flex">
+                      <button
+                        class="px-2 py-1 mx-auto mt-6 mb-6 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                        @click.stop="showFalsy = true"
+                      >Falsy Values</button>
                     </div>
                   </div>
                 </div>
@@ -183,9 +193,7 @@
 
         <!-- END Column -->
         <!-- Column -->
-        <div
-          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 4 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -202,7 +210,7 @@
               >
                 <div
                   class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
-                >Calling a Function</div>
+                >"if" ... "else"</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -211,18 +219,24 @@
                   <div class="px-10">
                     <div class="w-11/12 mx-auto text-left">
                       <ul class="list-disc">
-                        <li>When a function is defined, it doesn't automatically run. It has to be called(invoked)</li>
-                        <li>You call a function by typing its name followed by parenthesis</li>
-                        <li>The code inside the function body (between the curly brackets) will run (execute)</li>
+                        <li>An "if" statement can contain an optional "else" block</li>
+                        <li>The "else" block executes when the condition is false</li>
                       </ul>
-                    </div>
-                    <div class="w-3/4 h-auto mx-auto mt-3">
-                      <img
-                        src="../assets/function-call.png"
-                        alt="comments code
+                      <div class="w-3/4 h-auto mx-auto mt-3">
+                        <img
+                          src="../assets/ifelsestatement.png"
+                          alt="comments code
                       snippet"
-                        class="rounded-lg"
-                      />
+                          class="mt-4 mb-1 rounded-lg"
+                        />
+                        <p>- the condition evaluates to false so the else block will run</p>
+                        <div class="flex">
+                          <button
+                            class="px-2 py-1 mx-auto mt-6 mb-6 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                            @click.stop="showIfElse = true"
+                          >try it!</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -476,31 +490,31 @@
       </template>
     </app-modal>
     <app-modal
-      v-if="showFnExpression"
-      @close="showFnExpression = false"
-      backgroundColor="bg-fnlight"
-      textColor="text-fndark"
-      buttonColor="bg-fnlight hover:text-fnlight hover:bg-fndark border-fndark"
+      v-if="showFalsy"
+      @close="showFalsy = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
     >
       <template v-slot:header>
-        <h3 class="text-xl uppercase">Function Expression</h3>
+        <h3 class="text-xl uppercase">Falsy Values</h3>
       </template>
       <template v-slot:body>
-        <fn-expr></fn-expr>
+        <falsy-values></falsy-values>
       </template>
     </app-modal>
     <app-modal
-      v-if="showArrowFnExpression"
-      @close="showArrowFnExpression = false"
-      backgroundColor="bg-fnlight"
-      textColor="text-fndark"
-      buttonColor="bg-fnlight hover:text-fnlight hover:bg-fndark border-fndark"
+      v-if="showIfElse"
+      @close="showIfElse = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
     >
       <template v-slot:header>
-        <h3 class="text-xl uppercase">Arrow Function Expression</h3>
+        <h3 class="text-xl uppercase">"if" ... "else"</h3>
       </template>
       <template v-slot:body>
-        <arrow-fn-expr></arrow-fn-expr>
+        <if-else></if-else>
       </template>
     </app-modal>
     <div class="mt-10 text-center">
@@ -515,15 +529,15 @@
 
 <script>
 import AppModal from "../components/AppModal";
-import ifStatement from "../components/modal-contents/control-flow/ifStatement";
-import FnExpr from "../components/modal-contents/functions/FnExpr";
-import ArrowFnExpr from "../components/modal-contents/functions/ArrowFnExpr";
+import IfStatement from "../components/modal-contents/control-flow/IfStatement";
+import FalsyValues from "../components/modal-contents/control-flow/FalsyValues";
+import IfElse from "../components/modal-contents/control-flow/IfElseStatement";
 export default {
   components: {
     AppModal,
-    ifStatement,
-    FnExpr,
-    ArrowFnExpr
+    IfStatement,
+    FalsyValues,
+    IfElse
   },
   data() {
     return {
@@ -537,8 +551,8 @@ export default {
       eighthCard: undefined,
       showModal: false,
       showIfStatement: false,
-      showFnExpression: false,
-      showArrowFnExpression: false,
+      showFalsy: false,
+      showIfElse: false,
       message: "enter type of pet"
     };
   }
