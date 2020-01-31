@@ -112,7 +112,7 @@
                       <div class="flex">
                         <button
                           class="px-2 py-1 mx-auto mt-3 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
-                          @click.stop="showIfStatement = true"
+                          @click.stop="showIfStatementEx = true"
                         >Try it!</button>
                       </div>
                     </div>
@@ -518,8 +518,8 @@
       </div>
     </div>
     <app-modal
-      v-if="showIfStatement"
-      @close="showIfStatement = false"
+      v-if="showIfStatementEx"
+      @close="showIfStatementEx = false"
       backgroundColor="bg-flowlight"
       textColor="text-flowdark"
       buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
@@ -528,7 +528,7 @@
         <h3 class="text-xl">"if" Statement in Action</h3>
       </template>
       <template v-slot:body>
-        <if-statement></if-statement>
+        <if-statement-ex></if-statement-ex>
       </template>
     </app-modal>
     <app-modal
@@ -627,7 +627,7 @@
 
 <script>
 import AppModal from "../components/AppModal";
-import IfStatement from "../components/modal-contents/control-flow/IfStatement";
+import IfStatementEx from "../components/modal-contents/control-flow/IfStatementEx";
 import FalsyValues from "../components/modal-contents/control-flow/FalsyValues";
 import IfElse from "../components/modal-contents/control-flow/IfElseStatement";
 import MultipleConditions from "../components/modal-contents/control-flow/MultipleConditions";
@@ -637,7 +637,7 @@ import BreakStatement from "../components/modal-contents/control-flow/BreakState
 export default {
   components: {
     AppModal,
-    IfStatement,
+    IfStatementEx,
     FalsyValues,
     IfElse,
     MultipleConditions,
@@ -655,7 +655,7 @@ export default {
       sixthCard: undefined,
       seventhCard: undefined,
       eighthCard: undefined,
-      showIfStatement: false,
+      showIfStatementEx: false,
       showFalsy: false,
       showIfElse: false,
       showElseIf: false,
