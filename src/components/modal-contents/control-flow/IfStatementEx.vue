@@ -1,7 +1,10 @@
 <template>
   <div>
     <ul class="list-disc">
-      <li>Enter cat in the myPet field then press submit</li>
+      <li>
+        Enter cat in the
+        <span class="font-mono">myPet</span> field then press submit
+      </li>
       <li>Try another value other than cat to see what happens</li>
       <div class="w-full px-6 py-6 mt-6 text-gray-300 bg-gray-800">
         <p class="font-mono text-gray-200">
@@ -32,8 +35,15 @@
     >Submit</button>
     <ul class="list-disc list-inside">
       <li>An "if" statement matching the code in the snippet is running in the background</li>
-      <li>when cat is entered, the condition evaluates to true and the code is executed, showing the alert 'meow!'</li>
-      <li>If any value other than cat is entered, the condition evaluates to false and nothing happens</li>
+      <li>
+        when cat is entered, the condition evaluates to
+        <span class="font-mono">true</span> and the code is executed, showing the
+        <span class="font-mono">alert</span> 'meow!'
+      </li>
+      <li>
+        If any value other than cat is entered, the condition evaluates to
+        <span class="font-mono">false</span> and nothing happens
+      </li>
     </ul>
   </div>
 </template>

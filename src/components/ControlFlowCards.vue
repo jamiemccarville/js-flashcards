@@ -97,7 +97,10 @@
                       </p>
                       <ul class="list-disc list-inside">
                         <li>Evaluates a condition in parenthesis</li>
-                        <li>if the condition evaluates to true, executes block of code</li>
+                        <li>
+                          if the condition evaluates to
+                          <span class="font-mono">true</span>, executes block of code
+                        </li>
                       </ul>
                       <div class="mx-auto mt-3">
                         <img
@@ -106,9 +109,13 @@
                           class="w-7/12 mx-auto rounded-lg"
                         />
                       </div>
-                      <p
-                        class="mt-3"
-                      >This code will display the alert 'meow!' because the condition (myPet == "cat") evaluates to true</p>
+                      <p class="mt-3">
+                        This code will display the
+                        <span class="font-mono">alert</span> 'meow!' because the condition (myPet == "cat") evaluates to
+                        <span
+                          class="font-mono"
+                        >true</span>
+                      </p>
                       <div class="flex">
                         <button
                           class="px-2 py-1 mx-auto mt-3 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
@@ -154,7 +161,13 @@
                   <h3 class="px-10 pt-5 mb-4 text-lg font-semibold sm:text-xl">Truthy and Falsy</h3>
                   <div class="px-12 text-left">
                     <ul class="list-disc">
-                      <li>In an "if" statement the condition in the parenthesis needs to evaluated as a boolean (true or false)</li>
+                      <li>
+                        In an "if" statement the condition in the parenthesis needs to evaluated as a boolean (
+                        <span
+                          class="font-mono"
+                        >true</span> or
+                        <span class="font-mono">false</span>)
+                      </li>
                       <li>
                         If the value in the statement is not explicitly or doesn't evaluate to
                         <span
@@ -220,7 +233,12 @@
                     <div class="w-11/12 mx-auto text-left">
                       <ul class="list-disc">
                         <li>An "if" statement can contain an optional "else" block</li>
-                        <li>The "else" block executes when the condition is false</li>
+                        <li>
+                          The "else" block executes when the condition is
+                          <span
+                            class="font-mono"
+                          >false</span>
+                        </li>
                       </ul>
                       <div class="w-10/12 h-auto mx-auto mt-3">
                         <img
@@ -229,7 +247,10 @@
                       snippet"
                           class="mt-4 mb-1 rounded-lg"
                         />
-                        <p>- the condition evaluates to false so the else block will run</p>
+                        <p>
+                          - the condition evaluates to
+                          <span class="font-mono">false</span> so the else block will run
+                        </p>
                         <div class="flex">
                           <button
                             class="px-2 py-1 mx-auto mt-6 mb-6 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"

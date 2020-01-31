@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="-mt-2">
     <ul class="list-disc">
       <li>Enter a pet in the myPet field then press submit</li>
 
-      <div class="w-full px-4 py-6 mt-3 text-gray-300 bg-gray-800">
+      <div class="w-full px-4 py-6 mt-2 text-gray-300 bg-gray-800">
         <p class="font-mono text-gray-200">
           <span class="mr-2 text-purple-500">let</span>
           <span class="mr-2 text-blue-500">myPet</span>
@@ -42,12 +42,21 @@
     </ul>
     <button
       @click="catSound"
-      class="px-2 py-1 mt-2 mb-4 font-semibold border-2 border-solid rounded text-flowlight bg-flowdark hover:text-flowdark hover:bg-flowlight border-flowdark"
+      class="px-2 py-1 mt-2 mb-2 font-semibold border-2 border-solid rounded text-flowlight bg-flowdark hover:text-flowdark hover:bg-flowlight border-flowdark"
     >Submit</button>
-    <ul class="list-disc">
-      <li>when cat is entered, the first condition evaluates to true and the first code block is executed</li>
-      <li>when dog is entered, the second condition evaluates to true and the "else if" code block is executed</li>
-      <li>If any other value is entered, the two conditions evaluate to false and the "else" block is executed</li>
+    <ul class="-mb-6 list-disc">
+      <li>
+        when cat is entered, the first condition evaluates to
+        <span class="font-mono">true</span> and the first code block is executed
+      </li>
+      <li>
+        when dog is entered, the second condition evaluates to
+        <span class="font-mono">true</span> and the "else if" code block is executed
+      </li>
+      <li>
+        If any other value is entered, the two conditions evaluate to
+        <span class="font-mono">false</span> and the "else" block is executed
+      </li>
     </ul>
   </div>
 </template>
