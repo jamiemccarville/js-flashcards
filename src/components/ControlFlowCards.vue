@@ -655,7 +655,6 @@ export default {
       sixthCard: undefined,
       seventhCard: undefined,
       eighthCard: undefined,
-      showModal: false,
       showIfStatement: false,
       showFalsy: false,
       showIfElse: false,
