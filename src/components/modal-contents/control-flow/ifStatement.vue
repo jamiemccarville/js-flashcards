@@ -4,10 +4,12 @@
       <li>Enter cat in the myPet field then press submit</li>
       <li>Try another value other than cat to see what happens</li>
       <div class="w-full px-6 py-6 mt-6 text-gray-300 bg-gray-800">
-        <p class="font-mono text-blue-500">
-          myPet
+        <p class="font-mono text-gray-200">
+          <span class="mr-2 text-purple-500">let</span>
+          <span class="mr-2 text-blue-500">myPet</span>
+
           <span class="text-purple-500">=</span>
-          <input v-model="message" class="w-20 ml-3 text-gray-900" />
+          <input v-model="message" class="w-20 ml-3 text-gray-900" />;
         </p>
         <br />
         <p class="font-mono">

@@ -46,12 +46,12 @@
                         <img
                           src="../assets/block-statement-ex1.png"
                           alt="block statement example"
-                          class="w-6/12 mr-2 sm:w-5/12"
+                          class="w-6/12 mr-2 rounded-lg"
                         />
                         <img
                           src="../assets/block-statement-ex2.png"
                           alt="block statement example 2"
-                          class="w-6/12 ml-2 sm:w-5/12"
+                          class="w-6/12 ml-2 rounded-lg"
                         />
                       </div>
                     </div>
@@ -103,7 +103,7 @@
                         <img
                           src="../assets/if-statement.png"
                           alt="if statement example"
-                          class="mx-auto"
+                          class="w-7/12 mx-auto rounded-lg"
                         />
                       </div>
                       <p
@@ -222,7 +222,7 @@
                         <li>An "if" statement can contain an optional "else" block</li>
                         <li>The "else" block executes when the condition is false</li>
                       </ul>
-                      <div class="w-3/4 h-auto mx-auto mt-3">
+                      <div class="w-10/12 h-auto mx-auto mt-3">
                         <img
                           src="../assets/ifelsestatement.png"
                           alt="comments code
@@ -247,9 +247,7 @@
         </div>
         <!-- END Column -->
         <!-- Column -->
-        <div
-          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 5 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -266,7 +264,7 @@
               >
                 <div
                   class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
-                >Parameters</div>
+                >"else if"</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -275,27 +273,22 @@
                   <div class="px-10">
                     <div class="w-11/12 mx-auto text-left">
                       <ul class="list-disc">
-                        <li>inputs that a function can accept and then perform tasks with</li>
-                        <li>they are placeholders for information that will be passed in when the function is called</li>
-                        <li>parameter names are created when defining a function</li>
-                        <li>multiple parameters must be separated by a comma</li>
+                        <li>You may have an instance where you want to test multiple conditions</li>
+                        <li>you can use the "else if" clause to do that</li>
                       </ul>
-                    </div>
-                    <div class="w-3/4 h-auto mx-auto mt-2">
-                      <img
-                        src="../assets/parameter-example.png"
-                        alt="comments code
-                      snippet"
-                        class="rounded-lg"
-                      />
-                    </div>
-                    <div class="w-3/4 h-auto mx-auto mt-2">
-                      <img
-                        src="../assets/parameter-example2.png"
-                        alt="comments code
-                      snippet"
-                        class="rounded-lg"
-                      />
+                      <div class="mx-auto mt-4">
+                        <img
+                          src="../assets/elseif.png"
+                          alt="if statement example"
+                          class="w-10/12 mx-auto rounded-lg"
+                        />
+                      </div>
+                      <div class="flex">
+                        <button
+                          class="px-2 py-1 mx-auto mt-6 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                          @click.stop="showElseIf = true"
+                        >try it!</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -306,9 +299,7 @@
         </div>
         <!-- END Column -->
         <!-- Column -->
-        <div
-          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 6 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -323,9 +314,10 @@
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
-                <div
-                  class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
-                >Arguments</div>
+                <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
+                  Ternary
+                  <br />Operator
+                </div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
@@ -334,18 +326,28 @@
                   <div class="px-10">
                     <div class="w-11/12 mx-auto text-left">
                       <ul class="list-disc">
-                        <li>Values that are passed to the function when it is called</li>
-                        <li>can be passed to the funciton as values or as variables</li>
+                        <li>The ternary operator is the only JS operator that takes three operands</li>
+                        <ol class="my-2 list-decimal list-inside">
+                          <li>a condition followed by a question mark (?)</li>
+                          <li>an expression that executes if the condition is truthy, followed by a colon (:)</li>
+                          <li>an expression that executes if the condition is falsy</li>
+                        </ol>
+                        <li>the ternary operator is commonly used as a shortcut for the "if" statement</li>
                       </ul>
                     </div>
-                    <div class="w-11/12 h-auto mx-auto mt-3">
-                      <img
-                        src="../assets/argument-example.png"
-                        alt="comments code
-                      snippet"
-                        class="rounded-lg"
-                      />
-                    </div>
+                  </div>
+                  <div class="mx-auto mt-3">
+                    <img
+                      src="../assets/ternary-operator.png"
+                      alt="if statement example"
+                      class="w-10/12 mx-auto rounded-lg"
+                    />
+                  </div>
+                  <div class="flex hidden">
+                    <button
+                      class="px-2 py-1 mx-auto mt-4 mb-2 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                      @click.stop="showTernary = true"
+                    >see example</button>
                   </div>
                 </div>
               </div>
@@ -356,9 +358,7 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div
-          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 7 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -374,7 +374,7 @@
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--front hover:shadow-xl"
               >
                 <div class="font-sans text-5xl font-semibold sm:text-6xl popout font-cardface">
-                  Return
+                  Switch
                   <br />Statement
                 </div>
               </div>
@@ -385,28 +385,54 @@
                   <div class="px-10">
                     <div class="w-11/12 mx-auto text-left">
                       <ul class="list-disc">
-                        <li>Functions always return a value.</li>
                         <li>
-                          If there is no
-                          <span class="font-mono">return</span> value specified, "undefined" will be returned.
-                        </li>
-                        <li>
-                          when a
-                          <span class="font-mono">return</span>
-                          statement is used, the execution of the function is stopped. Any code after the
+                          allows a program to evaluate an expression and attempt to match the expression's value to a
                           <span
                             class="font-mono"
-                          >return</span> statement will not be executed
+                          >case</span> label
                         </li>
+                        <li>If a match is found, the program executes the associated statement</li>
                       </ul>
-                    </div>
-                    <div class="w-11/12 h-auto mx-auto mt-1">
-                      <img
-                        src="../assets/return-statement.png"
-                        alt="comments code
-                      snippet"
-                        class="rounded-lg"
-                      />
+                      <div class="flex">
+                        <button
+                          class="px-2 py-1 mx-auto mt-1 mb-2 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                          @click.stop="showSwitch = true"
+                        >see example</button>
+                      </div>
+                      <p class="-ml-5 underline">JS evaluates the switch statement as follows:</p>
+                      <ul class="list-disc">
+                        <li>
+                          Program first looks for a
+                          <span class="font-mono">case</span> clause with a label matching the value of expression, then transfers control to that clause, executing the associated statements
+                        </li>
+                        <li>
+                          If no matching label is found, the program looks for the optional
+                          <span
+                            class="font-mono"
+                          >default</span> clause:
+                        </li>
+                        <ul class="ml-4 list-disc">
+                          <li>
+                            <span class="font-mono">default</span> clause is found - program transfers control to that clause, executing the associated statements
+                          </li>
+                          <li>
+                            No
+                            <span class="font-mono">default</span> clause found - program resumes execution at statement following the end of
+                            <span
+                              class="font-mono"
+                            >switch</span>
+                          </li>
+                        </ul>
+                      </ul>
+                      <p class="italic text-center">
+                        (text and example from
+                        <a
+                          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+                          target="blank"
+                          class="underline cursor-alias hover:text-minion"
+                        >MDN</a>
+                        docs.)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -418,9 +444,7 @@
         <!-- END Column -->
 
         <!-- Column -->
-        <div
-          class="flex justify-center hidden w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2"
-        >
+        <div class="flex justify-center w-full px-2 py-2 my-1 xl:w-1/2 lg:my-4 lg:px-4 xl:px-2">
           <!-- Card 8 Starts -->
           <div class="scene scene--card zoom">
             <div
@@ -437,33 +461,51 @@
               >
                 <div
                   class="w-10/12 font-sans text-5xl font-semibold sm:text-6xl popout font-cardface"
-                >Immediately Invoked Function Expression</div>
+                >Break Statement</div>
               </div>
               <div
                 class="flex items-center justify-center rounded-lg shadow-lg card__face card__face--back hover:shadow-xl"
               >
                 <div class="font-sans font-light popout">
-                  <h3 class="px-10 text-lg font-semibold sm:text-xl">
-                    Immediately Invoked Function Expression
-                    <br />( IIFE )
-                  </h3>
+                  <h3 class="px-10 text-lg font-semibold sm:text-xl">Break Statement</h3>
                   <div class="px-10 mt-1">
                     <div class="w-11/12 mx-auto text-left">
                       <ul class="list-disc">
-                        <li>A function that is called immediately after it is defined</li>
-                        <li>The function expression is wrapped in brackets</li>
-                        <li>The function is called by a pair of brackets added to the end of the function</li>
-                        <li>Will typically be anonymous as it is only run once</li>
-                        <li>will not be added to the global object</li>
+                        <li>
+                          The optional
+                          <span class="font-mono">break</span> statement associated with each
+                          <span class="font-mono">case</span> clause ensures that the program breaks out of
+                          <span
+                            class="font-mono"
+                          >switch</span> once the matched statement is executed, and then continues execution at the statement following
+                          <span
+                            class="font-mono"
+                          >switch</span>.
+                        </li>
+                        <li>
+                          If
+                          <span class="font-mono">break</span> is omitted, the program continues execution inside the
+                          <span
+                            class="font-mono"
+                          >switch</span> statement (and will evaluate the next
+                          <span class="font-mono">case</span>, and so on)
+                        </li>
                       </ul>
-                    </div>
-                    <div class="w-3/4 h-auto mx-auto mt-2">
-                      <img
-                        src="../assets/iife-example.png"
-                        alt="comments code
-                      snippet"
-                        class="rounded-lg"
-                      />
+                      <div class="flex">
+                        <button
+                          class="px-2 py-1 mx-auto mt-6 mb-4 font-semibold uppercase border-2 border-solid rounded shadow-lg border-fndark hover:bg-flowdark hover:text-flowlight"
+                          @click.stop="showBreak = true"
+                        >see example</button>
+                      </div>
+                      <p class="mt-10 italic text-center">
+                        (text and example from
+                        <a
+                          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+                          target="blank"
+                          class="underline cursor-alias hover:text-minion"
+                        >MDN</a>
+                        docs.)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -517,6 +559,62 @@
         <if-else></if-else>
       </template>
     </app-modal>
+    <app-modal
+      v-if="showElseIf"
+      @close="showElseIf = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">"else if"</h3>
+      </template>
+      <template v-slot:body>
+        <multiple-conditions></multiple-conditions>
+      </template>
+    </app-modal>
+    <app-modal
+      v-if="showTernary"
+      @close="showTernary = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">Ternary Operator</h3>
+      </template>
+      <template v-slot:body>
+        <ternary-operator></ternary-operator>
+      </template>
+    </app-modal>
+    <app-modal
+      v-if="showSwitch"
+      @close="showSwitch = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">Switch Statement</h3>
+      </template>
+      <template v-slot:body>
+        <switch-statement></switch-statement>
+      </template>
+    </app-modal>
+    <app-modal
+      v-if="showBreak"
+      @close="showBreak = false"
+      backgroundColor="bg-flowlight"
+      textColor="text-flowdark"
+      buttonColor="bg-flowlight hover:text-flowlight hover:bg-flowdark border-flowdark"
+    >
+      <template v-slot:header>
+        <h3 class="text-xl uppercase">Break Statement</h3>
+      </template>
+      <template v-slot:body>
+        <break-statement></break-statement>
+      </template>
+    </app-modal>
     <div class="mt-10 text-center">
       <a href="#top" class="text-xl underline uppercase text-fndark">
         <button
@@ -532,12 +630,20 @@ import AppModal from "../components/AppModal";
 import IfStatement from "../components/modal-contents/control-flow/IfStatement";
 import FalsyValues from "../components/modal-contents/control-flow/FalsyValues";
 import IfElse from "../components/modal-contents/control-flow/IfElseStatement";
+import MultipleConditions from "../components/modal-contents/control-flow/MultipleConditions";
+import TernaryOperator from "../components/modal-contents/control-flow/TernaryOperator";
+import SwitchStatement from "../components/modal-contents/control-flow/SwitchStatement";
+import BreakStatement from "../components/modal-contents/control-flow/BreakStatement";
 export default {
   components: {
     AppModal,
     IfStatement,
     FalsyValues,
-    IfElse
+    IfElse,
+    MultipleConditions,
+    TernaryOperator,
+    SwitchStatement,
+    BreakStatement
   },
   data() {
     return {
@@ -553,7 +659,10 @@ export default {
       showIfStatement: false,
       showFalsy: false,
       showIfElse: false,
-      message: "enter type of pet"
+      showElseIf: false,
+      showTernary: false,
+      showSwitch: false,
+      showBreak: false
     };
   }
 };

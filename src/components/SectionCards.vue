@@ -103,7 +103,7 @@
                     <li>"if" Statement</li>
                     <li>Truthy & Falsy</li>
                     <li>"if"..."else"</li>
-                    <li>"if"..."else if"..."else"</li>
+                    <li>"else if"</li>
                     <li>Ternary Operator</li>
                     <li>Switch Statement</li>
                     <li>Break Statement</li>
