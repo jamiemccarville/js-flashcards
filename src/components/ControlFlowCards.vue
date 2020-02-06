@@ -46,12 +46,12 @@
                         <img
                           src="../assets/block-statement-ex1.png"
                           alt="block statement example"
-                          class="w-6/12 mr-2 rounded-lg"
+                          class="w-6/12 h-40 mr-2 rounded-lg"
                         />
                         <img
                           src="../assets/block-statement-ex2.png"
                           alt="block statement example 2"
-                          class="w-6/12 ml-2 rounded-lg"
+                          class="w-6/12 h-40 ml-2 rounded-lg"
                         />
                       </div>
                     </div>
@@ -412,7 +412,6 @@
                             class="font-mono"
                           >case</span> label
                         </li>
-                        <li>If a match is found, the program executes the associated statement</li>
                       </ul>
                       <div class="flex">
                         <button
@@ -424,7 +423,7 @@
                       <ul class="list-disc">
                         <li>
                           Program first looks for a
-                          <span class="font-mono">case</span> clause with a label matching the value of expression, then transfers control to that clause, executing the associated statements
+                          <span class="font-mono">case</span> clause with a label matching the value of 'expression', then transfers control to that clause, executing the associated statements
                         </li>
                         <li>
                           If no matching label is found, the program looks for the optional
@@ -434,7 +433,7 @@
                         </li>
                         <ul class="ml-4 list-disc">
                           <li>
-                            <span class="font-mono">default</span> clause is found - program transfers control to that clause, executing the associated statements
+                            <span class="font-mono">default</span> clause is found - program transfers control to that clause
                           </li>
                           <li>
                             No
