@@ -14,33 +14,24 @@ const routes = [
   {
     path: "/basics",
     name: "basics",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Basics.vue")
+      import(/* webpackChunkName: "basics" */ "../views/Basics.vue")
   },
   {
     path: "/functions",
     name: "functions",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Functions.vue")
+      import(/* webpackChunkName: "functions" */ "../views/Functions.vue")
   },
   {
     path: "/control-flow",
     name: "control-flow",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ControlFlow.vue")
+      import(/* webpackChunkName: "controlflow" */ "../views/ControlFlow.vue")
   },
   {
     path: "*", component: () =>
-      import( /* webpackChunkName: "about" */ "../components/404.vue")
+      import( /* webpackChunkName: "notfound" */ "../components/404.vue")
   }
 
 ];
